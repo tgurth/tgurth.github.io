@@ -24,4 +24,9 @@ function sizePictures() {
         projectPictures[i].style.width = w;    
         projectPictures[i].style.height = 'auto';
     }
+
+    if (window.innerWidth < 400) {
+        document.getElementById('pageTop').style.flexDirection = 'column';
+        document.getElementById('tyson').style.scale = '0.5';
+    }
 }
