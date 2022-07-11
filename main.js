@@ -1,8 +1,8 @@
 window.addEventListener( 'resize', sizePictures );
 
 if (window.innerWidth < 400) {
-    document.getElementById('nameCard').style.flexDirection = row;
-    document.getElementById('tyson').style.scale = 0.5;
+    document.getElementById('pageTop').style.flexDirection = 'column';
+    document.getElementById('tyson').style.scale = '0.5';
 }
 
 /**
