@@ -7,13 +7,6 @@
   color:rgb(224, 223, 223);
 }
 
-canvas {
-  margin: 0 auto;
-  position: fixed;
-    top: 0;
-    left: 0;
-    outline: none;
-}
 
 #upperLayer {
   position: absolute;

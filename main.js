@@ -1,5 +1,10 @@
 window.addEventListener( 'resize', sizePictures );
 
+if (window.innerWidth < 400) {
+    document.getElementById('nameCard').style.flexDirection = row;
+    document.getElementById('tyson').style.scale = 0.5;
+}
+
 /**
  * Sizing and resizing the images that hold the social medias.
  */
