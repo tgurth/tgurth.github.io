@@ -29,5 +29,5 @@ function sizePictures() {
         projectPictures[i].style.width = w;    
         projectPictures[i].style.height = 'auto';
     }
-    size (841)
+    size(841)
 }
