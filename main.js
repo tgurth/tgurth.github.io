@@ -29,7 +29,7 @@ function sizePictures(projectPictures) {
         projectPictures[i].style.width = w;    
         projectPictures[i].style.height = 'auto';
     }
-    if (!bool) {
+    if (bool != null) {
         size(850);
     }
 }
