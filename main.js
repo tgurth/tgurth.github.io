@@ -1,7 +1,8 @@
+let projectPictures = document.getElementsByClassName("projectPic");
+
 window.addEventListener( 'resize', sizePictures);
 
 size(600)
-let projectPictures = document.getElementsByClassName("projectPic");
 function size(min) {
     if (window.innerWidth < min) {
         document.getElementById('pageTop').style.flexDirection = 'column';
