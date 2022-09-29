@@ -6,39 +6,42 @@
   font-family: tangiang;
   color:rgb(224, 223, 223);
 }
-
-
+h1 {
+  color: rgb(46, 31, 39);
+}
+#tyson {
+  width: 50%;
+  height: auto;
+}
 #upperLayer {
   position: absolute;
-  top: 10px;
-  width: 100%;
   z-index: 100;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-
 header{
   text-align: center;
   z-index: 100;
   flex-direction: column;
   color: white;
-  margin-bottom: 3cm;
 
 }
-
-#infoSection {
+body {
+  width: 100%;
+}
+.infoSection {
   z-index: 100;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
-
 .infoBlock {
-  background-color: rgba(24, 19, 19, 0.8);
+  background-color: rgb(46, 31, 39);
   margin: 15px;
 }
-
 .projectBox {
   display: flex;
   align-items: center;
@@ -46,58 +49,53 @@ header{
   text-align: left;
   overflow: hidden;
 }
-
 #pageTop {
   display: flex;
-}
+  background-color: rgb(133, 77, 39);
+  margin: auto;
 
+}
 #nameCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(24, 19, 19, 0.8);
+  background-color: rgba(133, 77, 39, 0.8);
   margin: 15px;
   line-height: 0px;
 }
-
 #name {
   font-size: 31px;
+  color: rgb(46, 31, 39);
 }
-
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.galleryPic {
+  width: 70%;
+  height: auto;
+  margin: 2%;
+}
 #aboutMe {
   text-align: start;
   align-items: center;
   font-size: 20px;
-  background-color: rgba(24, 19, 19, 0.8);
+  background-color: rgba(133, 77, 39, 0.8);
   padding: 25px;
   margin: 15px;
 }
-
 #socials {
   display: flex;
   justify-content: space-evenly;
+  margin: 15px;
 }
-.mediaProfile {
-  display: flex;
-  flex-direction: column;
-  margin:5px;
-  background-color: rgba(24, 19, 19, 0.8);
-  padding:10px;
-  border-radius: 10%;
-}
-
-.mediaPic {
-  border-radius: 10%;
-}
-
-body{
-  background-color: black;
-}
-
 footer {
   text-align:  center;
   margin: 15px;
-  background-color: rgba(24, 19, 19, 0.8);
+  background-color: rgba(133, 77, 39, 0.8);
   padding: 2px;
 }
