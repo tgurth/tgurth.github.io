@@ -6,6 +6,31 @@
   font-family: tangiang;
   color:rgb(224, 223, 223);
 }
+#nav-bar {
+  z-index: 101;
+  top: 0;
+  position: fixed;
+  background-color: rgb(155, 89, 46);
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding: 1.5%;
+  height: 6vh;
+  font-size: 20px;
+  margin: 1%;
+  margin-top: 0;
+  box-shadow: 0px 10px 6px -5px rgb(72, 72, 72);
+}
+.nav-element {
+  margin: 20px;
+}
+#inner-nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 h1 {
   color: rgb(46, 31, 39);
 }
@@ -13,21 +38,27 @@ h1 {
   width: 50%;
   height: auto;
 }
+#tyson-nazare {
+  width: 10%;
+  height: auto;
+}
 #upperLayer {
   position: absolute;
   z-index: 100;
   margin-left: 2%;
   margin-right: 2%;
+  margin-top: 2%;
 }
 header{
   text-align: center;
   z-index: 100;
   flex-direction: column;
-  color: white;
+  color: whitesmoke;
 
 }
 body {
   width: 100%;
+  margin: 0;
 }
 .infoSection {
   z-index: 100;
@@ -74,6 +105,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
+  background-color: whitesmoke;
 }
 .galleryPic {
   width: 70%;
@@ -93,9 +125,85 @@ body {
   justify-content: space-evenly;
   margin: 15px;
 }
+
 footer {
   text-align:  center;
   margin: 15px;
   background-color: rgba(133, 77, 39, 0.8);
   padding: 2px;
+}
+
+#restaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6vh;
+  margin-top: 8%;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  overflow: hidden;
+}
+
+#search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  width: 110vh;
+  height: 75vh;
+}
+
+#loading {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* loading from loading.io*/
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-inline: auto;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: rgba(133, 77, 39, 0.8) transparent rgba(133, 77, 39, 0.8) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#result {
+  background-color: rgba(133, 77, 39, 0.8);
+  padding: 1vh;
+}
+
+button {
+  background-color: rgb(155, 89, 46);
+  border: none;
+  padding: 2vh;
+  font-size: larger;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(85, 50, 26);
+  border: none;
+  padding: 2vh;
+  font-size: larger;
 }
