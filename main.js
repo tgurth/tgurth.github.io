@@ -56,7 +56,7 @@ function addSmoothScroll(id, targetID) {
 }
 
 
-if (document.getElementById('page-top') != null) {
+if (document.getElementById('pageTop') != null) {
   addSmoothScroll("about-anchor", "aboutMe");
   addSmoothScroll("project-anchor", "projects");
   addSmoothScroll("experience-anchor", "experience");
@@ -147,4 +147,6 @@ function retrieveRestaurants() {
   
 window.initMap = initMap;
 
-document.getElementById('restaurant-search').addEventListener("click", retrieveRestaurants)
+if (document.getElementById('restaurant') != null) {
+  document.getElementById('restaurant-search').addEventListener("click", retrieveRestaurants)
+} 
