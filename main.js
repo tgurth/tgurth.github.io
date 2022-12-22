@@ -12,11 +12,21 @@ function size(min) {
       for (let i = 0; i < projects.length; i++) {
           projects[i].style.flexDirection = "column"
       }
+
+      let experiences = document.getElementsByClassName('experience-box')
+      for (let i = 0; i < experiences.length; i++) {
+          experiences[i].style.flexDirection = "column"
+      }
     } else {
       document.getElementById('pageTop').style.flexDirection = 'row';
       let projects = document.getElementsByClassName('projectBox')
       for (let i = 0; i < projects.length; i++) {
           projects[i].style.flexDirection = "row"
+      }
+
+      let experiences = document.getElementsByClassName('experience-box')
+      for (let i = 0; i < experiences.length; i++) {
+          experiences[i].style.flexDirection = "row"
       }
     } 
   }
