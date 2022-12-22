@@ -7,7 +7,6 @@ function size(min) {
   if (document.getElementById('pageTop') != null) {
     if (window.innerWidth < min) {
       document.getElementById('pageTop').style.flexDirection = 'column';
-      document.getElementById('tyson').style.scale = '0.9';
       let projects = document.getElementsByClassName('projectBox')
       for (let i = 0; i < projects.length; i++) {
           projects[i].style.flexDirection = "column"
@@ -17,6 +16,8 @@ function size(min) {
       for (let i = 0; i < experiences.length; i++) {
           experiences[i].style.flexDirection = "column"
       }
+      document.getElementById('nav-bar').style.fontSize = 'small';
+
     } else {
       document.getElementById('pageTop').style.flexDirection = 'row';
       let projects = document.getElementsByClassName('projectBox')
@@ -28,6 +29,8 @@ function size(min) {
       for (let i = 0; i < experiences.length; i++) {
           experiences[i].style.flexDirection = "row"
       }
+
+      document.getElementById('nav-bar').style.fontSize = 'x-large';
     } 
   }
 
