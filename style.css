@@ -6,12 +6,15 @@
   font-family: tangiang;
 }
 body {
-  display: flex;
-  justify-content: center;
   color:rgb(224, 223, 223);
 }
 a {
   color:rgb(224, 223, 223);
+}
+#nav-bar-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
 #nav-bar {
   text-align: center;
@@ -27,6 +30,10 @@ a {
   font-size: 20px;
   box-shadow: 0px 10px 6px -5px rgb(72, 72, 72);
   width: 95vw;
+}
+#fake-nav {
+  height: 15vh;
+  width: 100vw;
 }
 .nav-element {
   margin: 15px;
@@ -142,15 +149,22 @@ footer {
   padding: 2px;
 }
 
+#restaurant-intro {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  color: black;
+}
+
 #restaurant {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6vw;
-  margin-top: 8%;
   margin-left: 5vw;
   margin-right: 5vw;
   overflow: hidden;
+  background-color: whitesmoke;
+  padding: 2%;
 }
 
 #search {

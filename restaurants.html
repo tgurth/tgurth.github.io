@@ -11,13 +11,23 @@
     <title>Tyler Gurth</title>
   </head>
   <body>
-    <div id="nav-bar">
-        <div class="nav-element"><a href="index.html">Home</a></div>
-        <div class="nav-element"><a href="restaurants.html">Restaurant Picker</a></div>
+    <div id="nav-bar-wrapper">
+      <div id="nav-bar">
+        <div class="nav-element"><a href="index.html">Go Back Home</a></div>
+      </div>
     </div>
+    
+    <div id="fake-nav"></div>
     <div>
+      <div id="restaurant-intro">
+        <h2>Restaurant Picker</h2>
+        <h4>This was a small project I made as a gift for a friend who often found themselves
+          a bit too "indecisive" when choosing a place to eat. The program finds and chooses
+        a random open restaurant in the area surrounding Brown. It makes use of the Google Places API. </h4>
+      </div>
       <div id="restaurant">
         <div id="search">
+
           <button id="restaurant-search">Randomly Choose</button>
           <h3>Start Searching...</h3>
           <div class="lds-dual-ring" id="loading"></div>

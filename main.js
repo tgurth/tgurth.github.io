@@ -37,11 +37,8 @@ function size(min) {
   if (document.getElementById('restaurant') != null) {
     if (window.innerWidth < min) {
       document.getElementById('restaurant').style.flexDirection = 'column';
-      document.getElementById('restaurant').style.marginTop = '20%';
-
     } else {
       document.getElementById('restaurant').style.flexDirection = 'row';
-      document.getElementById('restaurant').style.marginTop = '8%';
     } 
   } 
 }
