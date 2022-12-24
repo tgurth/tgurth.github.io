@@ -200,6 +200,7 @@ footer {
 #result {
   background-color: rgba(133, 77, 39, 0.8);
   padding: 1vw;
+  text-align: center;
 }
 
 button {
@@ -217,108 +218,4 @@ button:hover {
   padding: 2vh;
   font-size: larger;
   color:rgb(224, 223, 223);
-}
-
-#gift-background {
-  z-index: 199;
-  background-color: black;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  animation: gift-background-animation 7s;
-  animation-fill-mode: forwards; 
-}
-#gift {
-  z-index: 200;
-  background-color: rgb(255, 0, 0);
-  position: absolute;
-  top: 12.5vh;
-  width: 80vw;
-  height: 80vh;
-  animation: gift-animation 6s;
-  animation-fill-mode: forwards; 
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-@keyframes gift-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(30deg);
-  }
-  60% {
-    transform: rotate(-30deg);
-  }
-  80% {
-    transform: rotate(0deg);
-  }
-  85% {
-    transform: rotate(10deg);
-  }
-  90% {
-    transform: rotate(-10deg);
-  }
-  92.5% {
-    opacity: 100%;
-    transform: rotate(10deg);
-  }
-  95% {
-    transform: rotate(-10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-    opacity: 0%;
-    visibility: hidden;
-  }
-}
-@keyframes gift-background-animation {
-  83% {
-    background-color: black;
-  }
-  85% {
-    background-color: rgb(255, 255, 255);
-    opacity: 100%;
-  }
-  100% {
-    background-color: rgb(255, 255, 255);
-    opacity: 0%;
-    visibility: hidden;
-  }
-}
-
-#horiz-wrap {
-  z-index: 201;
-  background-color: rgb(108, 143, 92);
-  position: absolute;
-  width: 80vw;
-  height: 20vh;
-
-  box-shadow: 0px 0px 6px 5px rgb(0, 0, 0);
-
-}
-#vert-wrap {
-  z-index: 201;
-  background-color: rgb(108, 143, 92);
-  position: absolute;
-  width: 10vw;
-  height: 80vh;
-  box-shadow: 0px 0px 6px 5px rgb(0, 0, 0);
-}
-
-#present-tag {
-  font-size: larger;
-  font-weight: bolder;
-  color: black;
-  padding: 2vh;
-  z-index: 201;
-  background-color: rgb(220, 207, 157);
-  position: absolute;
-  width: 15vw;
-  height: 15vh;
-  top: 55vh;
-  right: 15vh;
-  box-shadow: 0px 0px 6px 2px rgb(0, 0, 0);
 }
