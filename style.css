@@ -11,6 +11,9 @@ body {
 a {
   color:rgb(224, 223, 223);
 }
+.projectBox blockquote {
+  font-size: x-large;
+}
 #nav-bar-wrapper {
   display: flex;
   justify-content: center;
