@@ -6,6 +6,11 @@ size(600)
 function size(min) {
   if (document.getElementById('pageTop') != null) {
     if (window.innerWidth < min) {
+      for (let i = 0; i < projectPictures.length; i++) {
+        let w = (window.innerWidth / 2) + 'px';
+        projectPictures[i].style.width = w;    
+        projectPictures[i].style.height = 'auto';
+    }
       document.getElementById('pageTop').style.flexDirection = 'column';
       let projects = document.getElementsByClassName('projectBox')
       for (let i = 0; i < projects.length; i++) {
@@ -47,11 +52,10 @@ function size(min) {
 sizePictures();
 function sizePictures() {
     for (let i = 0; i < projectPictures.length; i++) {
-        let w = (window.innerWidth / 5) + 'px';
+        let w = (window.innerWidth / 4) + 'px';
         projectPictures[i].style.width = w;    
         projectPictures[i].style.height = 'auto';
     }
-
     size(800)
 }
 

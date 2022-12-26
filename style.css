@@ -7,9 +7,20 @@
 }
 body {
   color:rgb(224, 223, 223);
+  width: 100%;
+  margin: 0;
 }
 a {
   color:rgb(224, 223, 223);
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+#projects {
+  margin: 5vh 5vw 5vh 5vw;
+  background-color: whitesmoke;
 }
 .projectBox blockquote {
   font-size: x-large;
@@ -40,12 +51,13 @@ a {
 }
 .nav-element {
   margin: 15px;
+  cursor: pointer;
 }
 h1 {
   color: rgb(46, 31, 39);
 }
 #tyson {
-  width: 50%;
+  width: 25vw;
   height: auto;
 }
 #tyson-nazare {
@@ -53,7 +65,6 @@ h1 {
   height: auto;
 }
 #upperLayer {
-  position: absolute;
   z-index: 100;
   margin-left: 2%;
   margin-right: 2%;
@@ -64,11 +75,6 @@ header{
   z-index: 100;
   flex-direction: column;
   color: whitesmoke;
-
-}
-body {
-  width: 100%;
-  margin: 0;
 }
 .infoSection {
   z-index: 100;
@@ -80,7 +86,8 @@ body {
   margin-right: 8%;
 }
 .infoBlock {
-  background-color: rgb(46, 31, 39);
+  background-color: rgb(255, 255, 255);
+  color: black;
   margin: 15px;
 }
 .projectBox {
@@ -89,6 +96,33 @@ body {
   padding: 15px;
   text-align: left;
   overflow: hidden;
+  justify-content: space-around;
+  padding: 0;
+}
+.project-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vh;
+  margin: 1vh 1vw;
+  padding: 1vh;
+  background-color: rgb(133, 77, 39);
+}
+.project-title {
+  font-size: 5vh;
+}
+.project-info {
+  margin: 1vh 1vw;
+  padding: 5vh;
+  font-size: x-large;
+}
+li {
+  margin: 2vh;
+  font-size: 2.5vh;
+}
+.project-hr {
+  border: 1vh solid rgba(133, 77, 39, 0.386);
+  background-color: rgb(133, 77, 39);
 }
 .experience-box {
   display: flex;
@@ -102,8 +136,6 @@ body {
 #pageTop {
   display: flex;
   background-color: rgb(133, 77, 39);
-  margin: auto;
-
 }
 #nameCard {
   display: flex;
@@ -143,6 +175,9 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin: 15px;
+}
+#experience {
+  margin: 5vh 5vw 5vh 5vw;
 }
 
 footer {

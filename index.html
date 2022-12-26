@@ -20,12 +20,13 @@
         <div class="nav-element"><a href="restaurants.html">Restaurant Picker</a></div>
       </div>
     </div>
+    <div id="fake-nav"></div>
     <div id="upperLayer">
       <header>
         <div id="pageTop">
           <div id="nameCard">
             <img src="./Assets/newport.png" id="tyson">
-            <p id="name">Tyler Gurth</p>
+            <h1 id="name">Tyler Gurth</h1>
             <p>Brown Univeristy, co 2025</p>
           </div>
           <div id="aboutMe">
@@ -63,48 +64,80 @@
       <div class="infoSection" id="projects">
         <h1>Projects</h1>
         <div class="infoBlock">
-          <h2>The Virtual Rosetta</h2>
           <div class="projectBox">
-            <img class="projectPic" src="./Assets/Rosetta.png" />
-            <blockquote>
-              The Virtual Rosetta was a project I worked on in the summer of 2022. It involved using scientific
-              Python libraries like Sci-Kit Learn, SciPy, and Pandas to create visualization methods of a corpus of 4000 
-              woodblock prints from Vietnam. Read more about it here: <a href="https://drive.google.com/file/d/1LMgf56KCXGp90ApKy1m1LnQyOwqtleDC/view?usp=sharing">Research Poster</a>
-            </blockquote>
+            <div class="project-images">
+              <img class="projectPic" src="./Assets/MST.png" />
+              <img class="projectPic" src="./Assets/SortedMatrix.png" />
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">The Virtual Rosetta (Research)</h2>
+              <hr class="project-hr"></hr>
+              <p>
+                The Virtual Rosetta was a project I worked on in the summer of 2022. It involved using scientific
+                Python libraries to create visualization methods of a corpus of 4000 
+                woodblock prints from Vietnam. Read more about it here: <a href="https://drive.google.com/file/d/1LMgf56KCXGp90ApKy1m1LnQyOwqtleDC/view?usp=sharing">Research Poster</a>
+              </p>
+              <h3>Technical Details</h3>
+              <ul>
+                <li>Generated serialized matrices, minimum spanning trees, and force directed graphs using Python science libraries like SciPy,
+                  Sci-Kit Learn, and Pandas.</li>
+                <li>Researched effective methods for dimensional reduction data visualization such as T-SNE.</li>
+                <li>Programmed Python web scraping scripts with BeautifulSoup to convert the HTML corpus of data into PNG types and compile datasets.</li>
+                <li>Visualized complex data in actionable graphs using PyPlot, revealing qualitative trends.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="infoBlock">
-          <h2>Escape Room Panel</h2>
           <div class="projectBox">
-            <img class="projectPic" src="./Assets/GameRoom.png" />
-            <blockquote>
-              I made a custom Escape Room web app panel for my current employer. It used Firebase hosting, storage, and database to manage
-              and deploy the site. The web app included functions for room management, a clue storage system, and a leaderboard system. It brought to the
-              table new previously unreported statistics to be used for advertising and room creation.
-            </blockquote>
+            <div class="project-images">
+              <img class="projectPic" src="./Assets/GameRoom.png" />
+              <img class="projectPic" src="./Assets/leaderboard.png" />
+              <img class="projectPic" src="./Assets/timeadjust.png" />
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Escape Room Web Panel</h2>
+
+              <hr class="project-hr"></hr>
+              <p>
+                The Escape Garden State Web Panel was a project I made for my previous employer, an escape
+                room company in New Jersey. The site replaced an old, out-dated subscription site with a customized 
+                web app for the needs of the company.
+              </p>
+              <h3>Technical Details</h3>
+              <ul>
+                <li>Utilized Google Firebase as storage, authentication, and database for the project.</li>
+                <li>Programmed custom tools for the app, including scripting time functions and game features with Javascript.</li>
+                <li>Developed utils for statistic tracking, to be used for further adveritsiing and data analysis.</li>
+                <li>Designed, and created with original CSS, a GUI for employees to run the escape rooms.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="infoBlock">
-          <h2>Scrappy</h2>
           <div class="projectBox">
-            <img class="projectPic" src="./Assets/scrappy.png" />
-            <blockquote>
-              Scrappy is a React project built upon a MongoDB database in which users can create photo albums each day
-              to save their memories with meaningful captions, world news, and photos. AWS was used to save the photos, as 
-              retrievable links. Moreoever, the app has a friends system and a custom sorting NLP algorithm I wrote to sort public posts
-              based on hashtags a user indicates they are interested in. 
-            </blockquote>
-          </div>
-        </div>
-        <div class="infoBlock">
-          <h2>ProjectKorra</h2>
-          <div class="projectBox">
-            <img class="projectPic" src="./Assets/zuko.png" />
-            <blockquote>
-              I contribute to the open source popular Minecraft Plugin "ProjectKorra". This Java project is a ton of fun, and I've worked a lot
-              to engage the community, and enhance customizability of the plugin through greater configuration and toggleability. I also worked a lot on creating
-              new custom content in the form of "abilities", think, magic spells that are animated through Minecraft's particle system and parametric equations.
-            </blockquote>
+            <div class="project-images">
+              <img class="projectPic" src="./Assets/friends.png" />
+              <img class="projectPic" src="./Assets/scrappypage.png" />
+              <img class="projectPic" src="./Assets/scrappyprofile.png" />
+            </div>
+            <div class="project-info">
+              <h2 class="project-title">Scrappy</h2>
+
+              <hr class="project-hr"></hr>
+              <p>
+                Scrappy is a React social media web app I made with a team in my software engineering class at Brown. It combines
+                the best aspects of photo sharing apps with social media, forming a sentimental and reflective view into a 
+                user's life.
+              </p>
+              <h3>Technical Details</h3>
+              <ul>
+                <li>Used React TypeScript Framework to build out the components of the site, coupled with React Router to create a navigable state system.</li>
+                <li>Connected with Google Authentication API to compose a login service and security.</li>
+                <li>Developed a MongoDB Java database, and uploaded photos to AWS as storage.</li>
+                <li>Personally programmed an NLP sorting algorithm using English feature vectors to sort posts based on Hashtags.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
