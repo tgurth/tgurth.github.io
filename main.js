@@ -1,65 +1,3 @@
-let projectPictures = document.getElementsByClassName("projectPic");
-
-window.addEventListener( 'resize', sizePictures);
-
-size(600)
-function size(min) {
-  if (document.getElementById('pageTop') != null) {
-    if (window.innerWidth < min) {
-      for (let i = 0; i < projectPictures.length; i++) {
-        let w = (window.innerWidth / 2) + 'px';
-        projectPictures[i].style.width = w;    
-        projectPictures[i].style.height = 'auto';
-    }
-      document.getElementById('pageTop').style.flexDirection = 'column';
-      let projects = document.getElementsByClassName('projectBox')
-      for (let i = 0; i < projects.length; i++) {
-          projects[i].style.flexDirection = "column"
-      }
-
-      let experiences = document.getElementsByClassName('experience-box')
-      for (let i = 0; i < experiences.length; i++) {
-          experiences[i].style.flexDirection = "column"
-      }
-      document.getElementById('nav-bar').style.fontSize = 'small';
-
-    } else {
-      document.getElementById('pageTop').style.flexDirection = 'row';
-      let projects = document.getElementsByClassName('projectBox')
-      for (let i = 0; i < projects.length; i++) {
-          projects[i].style.flexDirection = "row"
-      }
-
-      let experiences = document.getElementsByClassName('experience-box')
-      for (let i = 0; i < experiences.length; i++) {
-          experiences[i].style.flexDirection = "row"
-      }
-
-      document.getElementById('nav-bar').style.fontSize = 'x-large';
-    } 
-  }
-
-  if (document.getElementById('restaurant') != null) {
-    if (window.innerWidth < min) {
-      document.getElementById('restaurant').style.flexDirection = 'column';
-    } else {
-      document.getElementById('restaurant').style.flexDirection = 'row';
-    } 
-  } 
-}
-
-
-sizePictures();
-function sizePictures() {
-    for (let i = 0; i < projectPictures.length; i++) {
-        let w = (window.innerWidth / 4) + 'px';
-        projectPictures[i].style.width = w;    
-        projectPictures[i].style.height = 'auto';
-    }
-    size(800)
-}
-
-
 function addSmoothScroll(id, targetID) {
     let anchor = document.getElementById(id);
 
@@ -70,11 +8,11 @@ function addSmoothScroll(id, targetID) {
 }
 
 
-if (document.getElementById('pageTop') != null) {
-  addSmoothScroll("about-anchor", "aboutMe");
-  addSmoothScroll("project-anchor", "projects");
-  addSmoothScroll("experience-anchor", "experience");
-  addSmoothScroll("gallery-anchor", "gall");
+if (document.getElementById('about-overlay') != null) {
+  addSmoothScroll("about-anchor", "fake-nav");
+  addSmoothScroll("project-anchor", "projects-title");
+  addSmoothScroll("experience-anchor", "experience-title");
+  addSmoothScroll("gallery-anchor", "gallery-title");
 }
 
 // From google places API.

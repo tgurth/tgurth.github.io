@@ -1,181 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/Favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/Favicon/favicon-16x16.png">
-    <link rel="manifest" href="./Assets/Favicon/site.webmanifest">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tyler Gurth</title>
-  </head>
-  <body>
-    <div id="nav-bar-wrapper">
-      <div id="nav-bar">
-        <div id="about-anchor" class="nav-element">About</div>
-        <div id="project-anchor" class="nav-element">Projects</div>
-        <div id="experience-anchor" class="nav-element">Experience</div>
-        <div id="gallery-anchor" class="nav-element">Gallery</div>
-        <div class="nav-element"><a href="restaurants.html">Restaurant Picker</a></div>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./Assets/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Assets/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="./Assets/Favicon/site.webmanifest">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyler Gurth</title>
+</head>
+
+<body>
+  <div id="nav-bar-wrapper">
+    <div id="nav-bar">
+      <div id="about-anchor" class="nav-element">About</div>
+      <div id="project-anchor" class="nav-element">Projects</div>
+      <div id="name-in-nav">Tyler Gurth</div>
+      <div id="experience-anchor" class="nav-element">Experience</div>
+      <div id="gallery-anchor" class="nav-element">Gallery</div>
     </div>
-    <div id="fake-nav"></div>
-    <div id="upperLayer">
-      <header>
-        <div id="pageTop">
-          <div id="nameCard">
-            <img src="./Assets/newport.png" id="tyson">
+  </div>
+  <div id="fake-nav"></div>
+  <div id="about-title">
+    <div id="about-me">
+      <div id="about-overlay">
+        <div id="name-card">
+          <img src="./Assets/Headshot.png" id="tyler">
+          <div>
             <h1 id="name">Tyler Gurth</h1>
-            <p>Brown Univeristy, co 2025</p>
-          </div>
-          <div id="aboutMe">
-            <h1>About Me</h1>
-            <blockquote>
-              19 yrs old, he/him.
-            </blockquote>
-            <blockquote>
-              Hi! My name is Tyler Gurth, and I am currently double majoring
-              in Computer Science and History of Art and Architecture at 
-              Brown University. I also Head TA introductory computer science classes here.
-            </blockquote>
-            <blockquote>
-              I am versed in Python, Java, HTML, CSS, JavaScript,
-              and Typescript. At Brown, I'm in the graphics and AI track.
-            </blockquote>
-            <blockquote>
-              My interests lie in game development, software engineering, UI/UX, and
-              my research interests lie in art through artificial intelligence, and
-              art identification through AI. 
-            </blockquote>
-            <blockquote>
-              Feel free to reach out on any of my socials at any time, I am
-              always up to connect! <a href="mailto:tgurth21@gmail.com">Or, email me!</a>
-            </blockquote>
-            <blockquote>
-              Find me on my socials!
-              <a href="https://www.linkedin.com/in/tyler-gurth-87249b225/" target="_blank">LinkedIn</a>           
-              <a href="https://github.com/tgurth" target="_blank">Github</a>
-
-            </blockquote>
+            <p>Brown University, co 2025</p>
           </div>
         </div>
-      </header>
-      <div class="infoSection" id="projects">
-        <h1>Projects</h1>
-        <div class="infoBlock">
-          <div class="projectBox">
-            <div class="project-images">
-              <img class="projectPic" src="./Assets/MST.png" />
-              <img class="projectPic" src="./Assets/SortedMatrix.png" />
-            </div>
-            <div class="project-info">
-              <h2 class="project-title">The Virtual Rosetta (Research)</h2>
-              <hr class="project-hr"></hr>
-              <p>
-                The Virtual Rosetta was a project I worked on in the summer of 2022. It involved using scientific
-                Python libraries to create visualization methods of a corpus of 4000 
-                woodblock prints from Vietnam. Read more about it here: <a href="https://drive.google.com/file/d/1LMgf56KCXGp90ApKy1m1LnQyOwqtleDC/view?usp=sharing">Research Poster</a>
-              </p>
-              <h3>Technical Details</h3>
-              <ul>
-                <li>Generated serialized matrices, minimum spanning trees, and force directed graphs using Python science libraries like SciPy,
-                  Sci-Kit Learn, and Pandas.</li>
-                <li>Researched effective methods for dimensional reduction data visualization such as T-SNE.</li>
-                <li>Programmed Python web scraping scripts with BeautifulSoup to convert the HTML corpus of data into PNG types and compile datasets.</li>
-                <li>Visualized complex data in actionable graphs using PyPlot, revealing qualitative trends.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="infoBlock">
-          <div class="projectBox">
-            <div class="project-images">
-              <img class="projectPic" src="./Assets/GameRoom.png" />
-              <img class="projectPic" src="./Assets/leaderboard.png" />
-              <img class="projectPic" src="./Assets/timeadjust.png" />
-            </div>
-            <div class="project-info">
-              <h2 class="project-title">Escape Room Web Panel</h2>
-
-              <hr class="project-hr"></hr>
-              <p>
-                The Escape Garden State Web Panel was a project I made for my previous employer, an escape
-                room company in New Jersey. The site replaced an old, out-dated subscription site with a customized 
-                web app for the needs of the company.
-              </p>
-              <h3>Technical Details</h3>
-              <ul>
-                <li>Utilized Google Firebase as storage, authentication, and database for the project.</li>
-                <li>Programmed custom tools for the app, including scripting time functions and game features with Javascript.</li>
-                <li>Developed utils for statistic tracking, to be used for further adveritsiing and data analysis.</li>
-                <li>Designed, and created with original CSS, a GUI for employees to run the escape rooms.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="infoBlock">
-          <div class="projectBox">
-            <div class="project-images">
-              <img class="projectPic" src="./Assets/friends.png" />
-              <img class="projectPic" src="./Assets/scrappypage.png" />
-              <img class="projectPic" src="./Assets/scrappyprofile.png" />
-            </div>
-            <div class="project-info">
-              <h2 class="project-title">Scrappy</h2>
-
-              <hr class="project-hr"></hr>
-              <p>
-                Scrappy is a React social media web app I made with a team in my software engineering class at Brown. It combines
-                the best aspects of photo sharing apps with social media, forming a sentimental and reflective view into a 
-                user's life.
-              </p>
-              <h3>Technical Details</h3>
-              <ul>
-                <li>Used React TypeScript Framework to build out the components of the site, coupled with React Router to create a navigable state system.</li>
-                <li>Connected with Google Authentication API to compose a login service and security.</li>
-                <li>Developed a MongoDB Java database, and uploaded photos to AWS as storage.</li>
-                <li>Personally programmed an NLP sorting algorithm using English feature vectors to sort posts based on Hashtags.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="infoSection" id="experience">
-        <h1>Experience</h1>
-        <div class="experience-box">
-          <h3>Head Teaching Assistant, Brown University Computer Science</h3>
+        <div id="about">
+          <h1>About Me</h1>
           <blockquote>
-            I serve as a Head Teaching Assistant for Brown CS' class on Discrete Structures and Probability. 
-            Within the proof based class, I work on grading, communicating with students, and managing a staff of 26 TAs.
+            19 yrs old, he/him.
           </blockquote>
-        </div>
-        <div class="experience-box">
-          <h3>Technical Director, Escape Garden State NJ</h3>
           <blockquote>
-            I developed and designed a new escape room web app with Vite.js and Google Firebase database. I also
-            acted as a tech consultant for the staff, and made helpful util systems, like a javascript Discord bot, and 
-            math utils for calculating scores and times.
+            Hi! My name is Tyler Gurth, and I am currently double majoring
+            in Computer Science and History of Art and Architecture at
+            Brown University. I also Head TA introductory computer science classes here.
           </blockquote>
+          <blockquote>
+            I am versed in Python, Java, HTML, CSS, JavaScript, C,
+            and Typescript. At Brown, I'm in the graphics and design track.
+          </blockquote>
+          <blockquote>
+            My interests lie in game development, software engineering, UI/UX, and
+            my research interests lie in art through artificial intelligence, and
+            art identification through AI.
+          </blockquote>
+          <blockquote>
+            Feel free to reach out on any of my socials at any time, I am
+            always up to connect! <a href="mailto:tgurth21@gmail.com">Or, email me!</a>
+          </blockquote>
+          <blockquote>
+            Find me on my socials!
+
+          </blockquote>
+          <div id="socials">
+            <button class="page-button"
+              onclick="window.open('https://www.linkedin.com/in/tyler-gurth-87249b225/')">LINKEDIN</button>
+            <button class="page-button" onclick="window.open('https://github.com/tgurth')">GITHUB</button>
+            <button class="page-button"
+              onclick="window.open('https://www.instagram.com/tylergurth/')">INSTAGRAM</button>
+
+          </div>
         </div>
       </div>
-      <div class="infoSection" id="gall">
-        <h1>Personal 3D Project Gallery</h1>
-        <div id="gallery">
-          <img src="Assets/CinematicStill.png" width="100%" class="galleryPic">
-          <img src="Assets/CompleteValley.png" width="100%" class="galleryPic">
-          <img src="Assets/outhouse.png" width="100%" class="galleryPic">
-          <img src="Assets/oogway.png" width="100%" class="galleryPic">
-          <img src="Assets/deer.png" width="100%" class="galleryPic">
-          <img src="Assets/Sayles.png" width="100%" class="galleryPic">
-        </div>
-      </div>
-      <footer>
-        <p>© 2022 Tyler Gurth. All rights reserved. 
-          Javascript, HTML, and a dash of CSS.
-        </p>
-      </footer>
     </div>
-    <script src="./main.js"></script>
-  </body>
+    <div class="caption">
+      <p>Still Life with Silver Cake Basket, 1866. John F Francis.</p>
+    </div>
+    <div class="section-separator" id="projects-title">
+      <hr class="line">
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="section-title">Projects</h1>
+    <div id="project-section">
+      <div class="project-box">
+        <div class="project-images">
+          <img class="project-pic" src="./Assets/MST.png" />
+          <img class="project-pic" src="./Assets/SortedMatrix.png" />
+        </div>
+        <div class="project-info">
+          <h2 class="project-title">The Virtual Rosetta (Research)</h2>
+          <hr class="project-hr">
+          </hr>
+          <p>
+            The Virtual Rosetta was a project I worked on in the summer of 2022. It involved using scientific
+            Python libraries to create visualization methods of a corpus of 4000
+            woodblock prints from Vietnam. Read more about it here: <a
+              href="https://drive.google.com/file/d/1LMgf56KCXGp90ApKy1m1LnQyOwqtleDC/view?usp=sharing">Research
+              Poster</a>
+          </p>
+          <h3>Technical Details</h3>
+          <ul>
+            <li>Generated serialized matrices, minimum spanning trees, and force directed graphs using Python science
+              libraries like SciPy,
+              Sci-Kit Learn, and Pandas.</li>
+            <li>Researched effective methods for dimensional reduction data visualization such as T-SNE.</li>
+            <li>Programmed Python web scraping scripts with BeautifulSoup to convert the HTML corpus of data into PNG
+              types and compile datasets.</li>
+            <li>Visualized complex data in actionable graphs using PyPlot, revealing qualitative trends.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-box">
+
+        <div class="project-info">
+          <h2 class="project-title">Escape Room Web Panel</h2>
+
+          <hr class="project-hr">
+          </hr>
+          <p>
+            The Escape Garden State Web Panel was a project I made for my previous employer, an escape
+            room company in New Jersey. The site replaced an old, out-dated subscription site with a customized
+            web app for the needs of the company.
+          </p>
+          <h3>Technical Details</h3>
+          <ul>
+            <li>Utilized Google Firebase as storage, authentication, and database for the project.</li>
+            <li>Programmed custom tools for the app, including scripting time functions and game features with
+              Javascript.</li>
+            <li>Developed utils for statistic tracking, to be used for further adveritsiing and data analysis.</li>
+            <li>Designed, and created with original CSS, a GUI for employees to run the escape rooms.</li>
+          </ul>
+        </div>
+        <div class="project-images">
+          <img class="project-pic" src="./Assets/GameRoom.png" />
+          <img class="project-pic" src="./Assets/leaderboard.png" />
+          <img class="project-pic" src="./Assets/timeadjust.png" />
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-images">
+          <img class="project-pic" src="./Assets/friends.png" />
+          <img class="project-pic" src="./Assets/scrappypage.png" />
+          <img class="project-pic" src="./Assets/scrappyprofile.png" />
+        </div>
+        <div class="project-info">
+          <h2 class="project-title">Scrappy</h2>
+          <hr class="project-hr">
+          </hr>
+          <p>
+            Scrappy is a React social media web app I made with a team in my software engineering class at Brown. It
+            combines
+            the best aspects of photo sharing apps with social media, forming a sentimental and reflective view into a
+            user's life.
+          </p>
+          <h3>Technical Details</h3>
+          <ul>
+            <li>Used React TypeScript Framework to build out the components of the site, coupled with React Router to
+              create a navigable state system.</li>
+            <li>Connected with Google Authentication API to compose a login service and security.</li>
+            <li>Developed a MongoDB Java database, and uploaded photos to AWS as storage.</li>
+            <li>Personally programmed an NLP sorting algorithm using English feature vectors to sort posts based on
+              Hashtags.</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="caption">
+      <p>Peonies in a Vase, c. 1885. Charles Ethan Porter.</p>
+    </div>
+    <div class="section-separator" id="experience-title">
+      <hr class="line">
+    </div>
+  </div>
+
+
+  <div class="page-section">
+    <h1 class="section-title">Experience</h1>
+    <div id="experience-section">
+      <div class="experience-box">
+        <h3>Head Teaching Assistant, Brown University Computer Science</h3>
+        <blockquote>
+          I serve as a Head Teaching Assistant for Brown CS' class on Discrete Structures and Probability.
+          Within the proof based class, I work on grading, communicating with students, and managing a staff of 30 TAs.
+        </blockquote>
+      </div>
+      <div class="experience-box">
+        <h3>Technical Director, Escape Garden State NJ</h3>
+        <blockquote>
+          I developed and designed a new escape room web app with Vite.js and Google Firebase database. I also
+          acted as a tech consultant for the staff, and made helpful util systems, like a javascript Discord bot, and
+          math utils for calculating scores and times.
+        </blockquote>
+      </div>
+    </div>
+    <div class="caption">
+      <p>Flowers on a Window Ledge, c. 1861. John La Farge.</p>
+    </div>
+    <div class="section-separator" id="gallery-title">
+      <hr class="line">
+    </div>
+  </div>
+
+  <div class="page-section">
+    <h1 class="section-title">Personal 3D Project Gallery</h1>
+    <div id="gallery">
+      <div class="gallery-caption-pair">
+        <img src="Assets/CinematicStill.png" width="100%" class="gallery-pic">
+        <div class="caption">
+          <p>Brown Sciences Library, 2022.</p>
+        </div>
+      </div>
+      <div class="gallery-caption-pair">
+        <img src="Assets/CompleteValley.png" width="100%" class="gallery-pic">
+        <div class="caption">
+          <p>Valley with Boat, 2022</p>
+        </div>
+      </div>
+      <div class="gallery-caption-pair">
+        <img src="Assets/outhouse.png" width="100%" class="gallery-pic">
+        <div class="caption">
+          <p>Outhouse, 2021.</p>
+        </div>
+      </div>
+      <div class="gallery-caption-pair">
+        <img src="Assets/oogway.png" width="100%" class="gallery-pic">
+        <div class="caption">
+          <p>Oogway, 2021.</p>
+        </div>
+      </div>
+      <div class="gallery-caption-pair">
+        <img src="Assets/deer.png" width="100%" class="gallery-pic">
+        <div class="caption">
+          <p>Deer on Isle, 2021.</p>
+        </div>
+      </div>
+      <div class="gallery-caption-pair">
+        <img src="Assets/Sayles.png" width="100%" class="gallery-pic">
+        <div class="caption">
+          <p>Brown University Sayles Hall, 2022.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer>
+    <p>© 2022 Tyler Gurth. All rights reserved.
+      Javascript, HTML, and a dash of CSS.
+    </p>
+  </footer>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
 </html>
