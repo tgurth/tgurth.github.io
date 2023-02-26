@@ -62,7 +62,7 @@ h1 {
     width: 75vw;
 }
 .section-title {
-    font-size: 4vw;
+    font-size: 4em;
 }
 
 /* Nav Bar Stuff */
@@ -86,7 +86,7 @@ h1 {
     font-style: italic;
     background-clip: text; 
     color: transparent;
-    background-image: url(Assets/flowers_on_a_window_ledge_2014.79.25.jpeg);
+    background-image: url(Assets/Paintings/flowers_on_a_window_ledge_2014.79.25.webp);
     background-repeat: repeat;
     background-size: 50%;
     -webkit-background-clip: text;
@@ -109,7 +109,7 @@ h1 {
 /* About Me Section */
 #about-me {
     overflow: hidden;
-    background-image: url("Assets/still_life_with_silver_cake_basket_2014.136.76.jpg");
+    background-image: url("Assets/Paintings/still_life_with_silver_cake_basket_2014.136.76.webp");
     background-size: 100vw;
 }
 
@@ -183,7 +183,7 @@ h1 {
 /* Projects */
 #project-section {
     width: 100vw;
-    background-image: url("Assets/peonies_in_a_vase_2018.44.124.jpg");
+    background-image: url("Assets/Paintings/peonies_in_a_vase_2018.44.124.webp");
     background-size: 100vw;
     display: flex;
     flex-direction: column;
@@ -255,7 +255,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(Assets/flowers_on_a_window_ledge_2014.79.25.jpeg);
+    background-image: url(Assets/Paintings/flowers_on_a_window_ledge_2014.79.25.webp);
     background-size: 100vw;
     justify-content: center;
     gap: 2%;
