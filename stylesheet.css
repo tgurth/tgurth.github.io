@@ -4,6 +4,7 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body {
     color:rgb(224, 223, 223);
@@ -48,11 +49,12 @@ h1 {
     font-style: italic;
     font-size: small;
 }
+
 .page-section {
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .section-separator {
-    margin-top: 4%;
+    margin-top: 2%;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -62,7 +64,8 @@ h1 {
     width: 75vw;
 }
 .section-title {
-    font-size: 4em;
+    font-size: 3em;
+    margin: 2%;
 }
 
 /* Nav Bar Stuff */
@@ -96,7 +99,7 @@ h1 {
     cursor: pointer;
 }
 #fake-nav {
-    height: 13vh;
+    height: 10vh;
     width: 100vw;
 }
 
@@ -149,6 +152,7 @@ h1 {
 #tyler {
     width: 20vw;
     margin: 2%;
+    aspect-ratio: 473 / 505;
 }
 
 @media (max-width: 1060px) {
@@ -247,7 +251,6 @@ h1 {
 }
 li {
     margin: 2vh;
-    font-size: 2vh;
 }
 
 /* Experience Section */
@@ -307,6 +310,14 @@ li {
     width: 60vw;
     height: auto;
     margin: 5% 3% 1% 3%;
+}
+
+@media (max-width: 960px) {
+    .gallery-pic {
+        width: 80vw;
+        height: auto;
+        margin: 5% 3% 1% 3%;
+    }
 }
 
 /* Footer  */
