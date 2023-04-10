@@ -21,6 +21,11 @@ h1 {
     font-style: italic;
     text-align: center;
 }
+h2 {
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
 .page-button {
     border-radius: 0;
     background-color: rgb(255, 255, 255);
@@ -51,7 +56,7 @@ h1 {
 }
 
 .page-section {
-    margin-top: 3%;
+    margin-top: 5%;
 }
 .section-separator {
     margin-top: 2%;
@@ -65,7 +70,7 @@ h1 {
 }
 .section-title {
     font-size: 3em;
-    margin: 2%;
+    margin: 1.5%;
 }
 
 /* Nav Bar Stuff */
@@ -73,7 +78,7 @@ h1 {
     text-align: center;
     position: fixed;
     background-color: rgb(255, 255, 255);
-    color: rgb(165, 165, 165);
+    color: rgb(103, 103, 103);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,6 +87,7 @@ h1 {
     font-size: 20px;
     box-shadow: 0px 5px 6px -5px rgb(213, 213, 213);
     width: 100vw;
+    z-index: 5;
 }
 #name-in-nav {
     cursor: auto;
@@ -99,13 +105,17 @@ h1 {
     cursor: pointer;
 }
 #fake-nav {
-    height: 10vh;
+    height: 10.5vh;
     width: 100vw;
 }
 
 @media (max-width: 600px) {
     .nav-element {
         display: none;
+    }
+    #fake-nav {
+        height: 8vh;
+        width: 100vw;
     }
 }
 
@@ -230,6 +240,11 @@ h1 {
     .project-box {
         width: 90vw;
     }
+    .project-info {
+        margin: 1vh 1vw;
+        padding: 1vh;
+        font-size: medium;
+    }
 }
 .project-pic {
     width: 20vw;
@@ -282,7 +297,7 @@ li {
 }
 @media (max-width: 960px) {
     .experience-box {
-        width: 60vw;
+        width: 75vw;
     }
 }
 @media (max-width: 450px) {
@@ -294,22 +309,87 @@ li {
 /* Gallery */
 #gallery {
     display: flex;
-    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    width: 100vw;
+}
+.gallery-year {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 97vw;
+    background-color: white;
+    padding: 1%;
+    margin: 1%;
+}
+.year-content {
+    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
+.year-timeline {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    margin: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1%;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.year-box {
+    padding: 1% 35%;
+    border: 1px solid;
+    display: flex;
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: black;
+}
+.year-line {
+    width: 1%;
+    height: 100%;
+    background-color: black;
+}
+
 .gallery-caption-pair {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0;
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+    margin: 0.5%;
 }
 .gallery-pic {
-    width: 60vw;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 25vw;
     height: auto;
-    margin: 5% 3% 1% 3%;
+}
+.gallery-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 25vw;
+    height: 25vw;
+    background-image: linear-gradient( 180deg,  rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.253) 65%, rgb(0, 0, 0));
+    position: absolute;
+    z-index: 0;
 }
 
 @media (max-width: 960px) {
@@ -317,6 +397,35 @@ li {
         width: 80vw;
         height: auto;
         margin: 5% 3% 1% 3%;
+    }
+    .gallery-caption-pair {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 0;
+        width: 80vw;
+        height: inherit;
+        overflow: hidden;
+    }
+    .gallery-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        width: 80vw;
+        background-image: linear-gradient( 180deg,  rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.253) 65%, rgb(0, 0, 0));
+        position: absolute;
+        z-index: 0;
+    }
+    .year-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .year-timeline {
+        display: none;
     }
 }
 
@@ -327,4 +436,5 @@ footer {
     background-color: rgb(183, 199, 211);
     padding: 2px;
     width: 100vw;
+    margin-top: 1%;
 }
