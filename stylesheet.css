@@ -139,6 +139,7 @@ h2 {
     margin: 1%;
 }
 #name-card {
+    text-align: center;
     width: 22vw;
     display: flex;
     flex-direction: column;
@@ -150,7 +151,7 @@ h2 {
 }
 #about {
     text-align: c;
-    width: 50vw;
+    width: 60vw;
     background-color: rgba(255, 255, 255, 1);
     color: rgb(103, 103, 103);
     padding: 1.5%;
@@ -195,6 +196,7 @@ h2 {
         align-items: center;
     }
 }
+
 
 /* Projects */
 #project-section {
@@ -269,6 +271,17 @@ h2 {
 li {
     margin: 2vh;
 }
+.skills {
+    display: flex;
+    align-items: center;
+}
+.tech-skill {
+    color: black;
+    margin: 1%;
+    padding: 1.5%;
+    border-radius: 10px;
+}
+
 
 /* Experience Section */
 #experience-section {
@@ -282,7 +295,7 @@ li {
     padding: 4%;
 }
 .experience-box {
-    width: 40vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
