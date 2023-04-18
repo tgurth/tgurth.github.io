@@ -72,7 +72,7 @@ h2 {
     width: 65%;
     font-weight: lighter;
     padding: 0.5%;
-    backdrop-filter: brightness(1.5);
+    backdrop-filter: brightness(1.2) blur(10px);
 }
 
 /* Nav Bar Stuff */
@@ -217,7 +217,7 @@ h2 {
     overflow: hidden;
     justify-content: space-around;
     padding: 0;
-    width: 60vw;
+    width: 75vw;
     background-color: white;
     color:rgb(103, 103, 103);
 }
@@ -228,6 +228,7 @@ h2 {
     justify-content: space-around;
     margin: 1vh 1vw;
     padding: 1vh;
+    background-color: whitesmoke;
 }
 
 @media (max-width: 1060px) {
@@ -274,6 +275,7 @@ li {
 .skills {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .tech-skill {
     color: black;
@@ -309,6 +311,17 @@ li {
 }
 .experience-box h3 {
     text-align: center;
+}
+#experience-skills {
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    width: 80%;
+}
+#experience-skills .tech-skill {
+    text-align: left;
+    width: 50%;
+    padding: 1%;
+    border-radius: 0px 10px 10px 0px;
 }
 @media (max-width: 960px) {
     .experience-box {
