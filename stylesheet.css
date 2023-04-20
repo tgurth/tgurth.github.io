@@ -186,9 +186,15 @@ h2 {
 @media (max-width: 650px) {
     #name-card {
         width: 80vw;
+        flex-direction: column;
     }
     #about {
         width: 80vw;
+    }
+    #tyler {
+        width: 50vw;
+        margin: 2%;
+        aspect-ratio: 473 / 505;
     }
     #socials {
         flex-direction: column;
