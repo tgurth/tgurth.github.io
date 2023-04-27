@@ -72,7 +72,7 @@ h2 {
     width: 65%;
     font-weight: lighter;
     padding: 0.5%;
-    backdrop-filter: brightness(1.2) blur(10px);
+    background-color: white;
 }
 
 /* Nav Bar Stuff */
@@ -86,22 +86,22 @@ h2 {
     justify-content: center;
     padding: 1.5%;
     height: 6vh;
-    font-size: 20px;
+    font-size: 25px;
     box-shadow: 0px 5px 6px -5px rgb(213, 213, 213);
     width: 100vw;
     z-index: 5;
 }
-#name-in-nav {
-    cursor: auto;
-    font-size: xx-large;
-    font-style: italic;
-    background-clip: text; 
-    color: transparent;
-    background-image: url(Assets/Paintings/flowers_on_a_window_ledge_2014.79.25.webp);
-    background-repeat: repeat;
-    background-size: 50%;
-    -webkit-background-clip: text;
-  }
+#img-in-nav-holder {
+    width: 25vw;
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+    padding: 1%;
+}
+.nav-line {
+    width: 7vw;
+}
+
 .nav-element {
     margin: 15px;
     cursor: pointer;
@@ -119,6 +119,17 @@ h2 {
         height: 8vh;
         width: 100vw;
     }
+    #img-in-nav-holder {
+        width: 50vw;
+        display: flex;
+        font-size: 35px;
+        align-items: center;
+        padding: 1%;
+    }
+    .nav-line {
+        width: 16vw;
+    }
+    
 }
 
 /* About Me Section */
@@ -129,14 +140,28 @@ h2 {
 }
 
 /* Overlay */
+@keyframes slowly-appear {
+    0% {
+      opacity: 50%;
+      transform: translateX(-100%);
+    }
+    80% {
+        transform: translateX(1.5%);
+      }
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
 
+    }
+}
 #about-overlay {
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1%;
-    margin: 1%;
+    margin: 1.2%;
+    animation: 4.5s ease-out 0s 1 slowly-appear;
 }
 #name-card {
     text-align: center;
