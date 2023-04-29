@@ -7,6 +7,10 @@ function addSmoothScroll(id, targetID) {
     });
 }
 
+particlesJS.load('particles-js', 'particles/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
 
 if (document.getElementById('about-overlay') != null) {
   addSmoothScroll("about-anchor", "fake-nav");

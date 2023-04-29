@@ -140,20 +140,6 @@ h2 {
 }
 
 /* Overlay */
-@keyframes slowly-appear {
-    0% {
-      opacity: 50%;
-      transform: translateX(-100%);
-    }
-    80% {
-        transform: translateX(1.5%);
-      }
-    100% {
-        opacity: 100%;
-        transform: translateX(0);
-
-    }
-}
 #about-overlay {
     width: 100vw;
     display: flex;
@@ -161,7 +147,6 @@ h2 {
     align-items: center;
     gap: 1%;
     margin: 1.2%;
-    animation: 4.5s ease-out 0s 1 slowly-appear;
 }
 #name-card {
     text-align: center;
