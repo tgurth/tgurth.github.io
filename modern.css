@@ -35,6 +35,7 @@ a:hover {
 hr {
     background: linear-gradient(45deg,  rgb(19, 102, 154),rgb(154, 192, 146),  rgb(249, 165, 135), rgb(249, 226, 135));
     height: 1vh;
+    width: inherit;
     border: none;
     opacity: 30%;
 }
@@ -234,7 +235,7 @@ footer {
 .skills {
     background: linear-gradient(45deg,  rgb(19, 102, 154),rgb(154, 192, 146),  rgb(249, 165, 135), rgb(249, 226, 135));
     border-radius: 15px;
-    padding: 1%;
+    padding: 1.3%;
     width: fit-content;
     color: black;
 }
@@ -274,4 +275,28 @@ footer {
     width: 15em;
     height: 15em;
     padding: 5%;
+}
+
+/* experience section */
+#experience-section {
+    padding: 10%;
+    padding-top: 0;
+    width: 90vw;
+}
+
+#jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38vw;
+    margin: 2%;
+    font-size: 1.2em;
+    padding: 1%;
 }
