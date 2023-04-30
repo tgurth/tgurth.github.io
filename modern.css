@@ -402,9 +402,10 @@ footer {
 
 /* experience section */
 #experience-section {
+    padding: 5%;
     padding-top: 0;
     padding-bottom: 3%;
-    width: 100vw;
+    width: 90vw;
 }
 
 #jobs {
