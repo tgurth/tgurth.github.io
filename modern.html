@@ -20,18 +20,16 @@
         <script src="./particles/particles.js"></script>
 
         <div id="nav">
-            <p>
-                << back to classic site </p>
-
+            <button class="nav-button" onclick="window.open('index.html')">
+                << back to classic site </button>
                     <div id="nav-buttons">
-                        <button class="nav-button">About</button>
-                        <button class="nav-button">Projects</button>
-                        <button class="nav-button">Experience</button>
-                        <button class="nav-button">Gallery</button>
+                        <button class="nav-button" id="about-anchor">About</button>
+                        <button class="nav-button" id="project-anchor">Projects</button>
+                        <button class="nav-button" id="experience-anchor">Experience</button>
+                        <button class="nav-button" id="gallery-anchor">Gallery</button>
                     </div>
         </div>
         <div id="about">
-
             <div>
                 <h2>Hey! I'm</h2>
                 <h1>Tyler Gurth</h1>
@@ -48,9 +46,57 @@
         </div>
 
     </div>
-    <div id="transition">
+    <div id="sections">
+        <div id="about-section">
+            <div id="name-and-socials">
+                <h2 id="name">Tyler Gurth</h2>
+                <p>Brown University, co 2025</p>
+                <p>
+                    20 yrs old, he/him.
+                </p>
+                <div id="socials">
+                    <a class="social-link" target="_blank"
+                        href="https://www.linkedin.com/in/tyler-gurth-87249b225/"><img class="social-photo"
+                            src="Assets/linkedin.png"></a>
+                    <a class="social-link" target="_blank" href="https://github.com/tgurth"><img class="social-photo"
+                            src="Assets/github.png"></a>
+                    <a class="social-link" target="_blank" href="https://www.instagram.com/tylergurth/"><img
+                            class="social-photo" src="Assets/instagram.png"></a>
+                </div>
+            </div>
+            <div>
+                <hr />
+                <blockquote>
+                    I am versed in <strong>Python, HTML, CSS, Java, JavaScript, C, C++,
+                        and Typescript.</strong> At Brown, I'm in the software and design track. My interests lie in
+                    game
+                    development, software engineering, and UI/UX.
+                    My research interests lie in art through artificial intelligence, and
+                    art identification through AI.
+                </blockquote>
+                <blockquote>
+                    Feel free to reach out on any of my socials at any time, I am
+                    always up to connect! <a href="mailto:tgurth21@gmail.com">Or, email me!</a>
+                </blockquote>
+                <br />
+                <blockquote>
+                    Want more info? Check out my <a href="https://tylergurth.com/TylerGurthResume.pdf"
+                        target="_blank">resume</a>.
+                </blockquote>
+            </div>
 
+        </div>
+        <div id="project-section">
+
+        </div>
+        <div id="experience-section">
+
+        </div>
+        <div id="gallery-section">
+
+        </div>
     </div>
+
     <!-- <div id="nav-bar-wrapper">
         <div id="nav-bar">
             <div id="about-anchor" class="nav-element">About</div>

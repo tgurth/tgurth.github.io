@@ -18,3 +18,10 @@ if (document.getElementById('about-overlay') != null) {
   addSmoothScroll("experience-anchor", "experience-title");
   addSmoothScroll("gallery-anchor", "gallery-title");
 }
+
+if (document.getElementById('about-opener') != null) {
+  addSmoothScroll("about-anchor", "about-section");
+  addSmoothScroll("project-anchor", "project-section");
+  addSmoothScroll("experience-anchor", "experience-section");
+  addSmoothScroll("gallery-anchor", "gallery-section");
+}

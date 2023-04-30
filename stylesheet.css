@@ -244,7 +244,6 @@ h2 {
     justify-content: space-around;
     margin: 1vh 1vw;
     padding: 1vh;
-    background-color: whitesmoke;
 }
 
 @media (max-width: 1060px) {
