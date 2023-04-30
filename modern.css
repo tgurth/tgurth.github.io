@@ -163,6 +163,12 @@ footer {
     padding: 5%;
 }
 
+.section-title {
+    font-size: 2.8em;
+    color: whitesmoke;
+    animation: bounce 4s ease infinite;
+}
+
 /* About section */
 
 /* Socials */
@@ -172,10 +178,13 @@ footer {
     background-color: rgba(249, 226, 135, 0.041);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     width: 90vw;
-    font-size: 1.3em;
+    font-size: 1.4em;
     color: rgb(230, 230, 230);
+    padding-top: 3%;
+    padding-bottom: 3%;
+
 }
 
 #name-and-socials {
@@ -201,4 +210,68 @@ footer {
     margin: 0.5%;
 }
 
+#name {
+    font-size: 2em;
+    animation: bounce 4s ease infinite;
+}
+
+#resume-and-drawing {
+    display: flex;
+    justify-content: space-between;
+}
+
+#drawing {
+    width: 12vw;
+}
+
 /* Project Section */
+#project-section {
+    padding: 10%;
+    padding-top: 1%;
+    width: 90vw;
+}
+
+.skills {
+    background: linear-gradient(45deg,  rgb(19, 102, 154),rgb(154, 192, 146),  rgb(249, 165, 135), rgb(249, 226, 135));
+    border-radius: 15px;
+    padding: 1%;
+    width: fit-content;
+    color: black;
+}
+
+
+.project-title {
+    font-size: 1.8em;
+    color: rgb(182, 72, 29);
+}
+
+.project {
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.project-info {
+    font-size: 1.2em;
+    width: 50vw;
+}
+.project-bar {
+    width: 1vw;
+    background-color: whitesmoke;
+    height: 50vh;
+}
+.opacity-bar {
+    width: 2vw;
+    background-color: rgba(255, 25, 0, 0.468);
+    height: 50vh;
+}
+
+.project-image {
+    background: linear-gradient(45deg, white, rgba(210, 76, 18, 0.749));
+    border-radius: 15px;
+    width: 15em;
+    height: 15em;
+    padding: 5%;
+}
