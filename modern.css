@@ -40,7 +40,6 @@ hr {
     opacity: 30%;
 }
 
-
 #about {
     position: relative;
     z-index: 1;
@@ -300,3 +299,50 @@ footer {
     font-size: 1.2em;
     padding: 1%;
 }
+
+/* skills */
+#skill-section {
+    padding: 10%;
+    padding-top: 0;
+    width: 90vw;
+}
+
+#programming-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1%;
+}
+
+.skill-bubble {
+    margin: 0.2%;
+    padding: 2%;
+    border-radius: 50%;
+    overflow: hidden;
+    color: black;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: scale 1s, margin 1s, filter 1s;
+
+}
+
+.skill-bubble:hover {
+    margin: 0.2%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 2%;
+    border-radius: 50%;
+    overflow: hidden;
+    color: black;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 1.2;
+    filter: brightness(120%);
+}
+
+
