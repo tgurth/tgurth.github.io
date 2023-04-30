@@ -118,6 +118,10 @@ hr {
     justify-content: space-between;
     color: white;
 }
+#nav a {
+    color: white;
+    font-size: 1.2em;
+}
 
 #nav-buttons {
     display: flex;
@@ -164,10 +168,12 @@ footer {
 /* Socials */
 
 #about-section {
+    padding: 10%;
+    background-color: rgba(249, 226, 135, 0.041);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
+    width: 90vw;
     font-size: 1.3em;
     color: rgb(230, 230, 230);
 }
@@ -194,3 +200,5 @@ footer {
     width: 3vw;
     margin: 0.5%;
 }
+
+/* Project Section */
