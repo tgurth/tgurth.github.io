@@ -231,7 +231,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    width: 100vw;
+    width: 90vw;
+    padding: 5%;
     font-size: 1.4em;
     color: rgb(230, 230, 230);
     padding-top: 3%;
