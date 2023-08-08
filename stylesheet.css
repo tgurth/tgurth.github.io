@@ -580,3 +580,116 @@ footer {
     width: 100vw;
     margin-top: 1%;
 }
+
+
+/* Photography Stuff */
+#photo-intro {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#photo-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-image: url("Assets/Photos/Lavenders.JPG");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+#photo-title {
+    background-color: white;
+    padding: 1%;
+    text-align: center;    
+    backdrop-filter: blur(20px);
+    width: fit-content;
+    border: 1px solid black;
+    letter-spacing: 15px;
+    text-indent: 25px;
+
+
+}
+
+#photo-about {
+    background-color: rgb(205, 218, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1%;
+    text-align: center;    
+    backdrop-filter: blur(20px);
+    width: fit-content;
+    border: 1px solid black;
+    margin: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    color: rgb(180, 180, 180);
+}
+
+#photo-headshot {
+    width: 20vw;
+}
+@media (max-width: 900px) {
+    #photo-about {
+        background-color: rgb(205, 218, 222);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 1%;
+        text-align: center;    
+        backdrop-filter: blur(20px);
+        width: fit-content;
+        border: 1px solid black;
+        margin: 5%;
+        margin-right: 10%;
+        margin-left: 10%;
+        font-size: 1.5rem;
+        color: rgb(180, 180, 180);
+    }
+    #photo-headshot {
+        width: 40vw;
+    }
+    
+}
+
+#photo-about-text {
+    margin: 5%;
+}
+
+#portfolio-title {
+    background-color: white;
+    color: black;
+    padding: 1%;
+    text-align: center;    
+    backdrop-filter: blur(20px);
+    border: 1px solid black;
+    font-size: 1.5rem;
+    letter-spacing: 25px;
+    margin-bottom: 5%;
+}
+
+#portfolio-title p {
+    text-align: center;
+    text-indent: 25px;
+
+}
+
+#portfolio {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio-photo {
+    width: 30%;
+    height: auto;
+    margin: 1%;
+}
