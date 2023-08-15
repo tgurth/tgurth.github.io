@@ -620,12 +620,12 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 1%;
+    padding: 0.5%;
     text-align: center;    
     backdrop-filter: blur(20px);
     width: fit-content;
     border: 1px solid black;
-    margin: 5%;
+    margin: 4%;
     margin-right: 10%;
     margin-left: 10%;
     font-size: 1.5rem;
