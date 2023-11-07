@@ -704,16 +704,6 @@ footer {
     text-indent: 25px;
 }
 
-#card {
-    background-color: white;
-    padding: 1%;
-    text-align: center;    
-    border: 1px solid black;
-    width: 50vw;
-    height: 60vh;
-    margin: 1%;
-}
-
 .work-card {
     background-color: white;
     padding: 1%;
@@ -721,6 +711,16 @@ footer {
     border: 1px solid black;
     margin: 1%;
     font-size: larger;
+    width: 40vw;
+}
+.auth-card {
+    background-color: white;
+    padding: 1%;
+    text-align: center;    
+    border: 1px solid black;
+    margin: 1%;
+    font-size: larger;
+    width: 80vw;
 }
 
 #card-page-content {
@@ -745,13 +745,14 @@ footer {
 }
 
 .card {
-    width: 80vw;
+    width: 70vw;
     background-color: white;
     padding: 1%;
     text-align: center;    
     border: 1px solid black;
     margin: 1%;
     overflow: scroll;
+    font-size: larger;
 }
 
 .card-content {
@@ -762,7 +763,6 @@ footer {
 }
 
 .card-info {
-    width: 50vw;
     text-align: left;
 }
 
@@ -773,7 +773,7 @@ footer {
 }
 
 .card-image {
-    width: 30vw;
+    width: 25vw;
 }
 
 .work-border {
@@ -796,4 +796,12 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 1%;
+}
+
+.separator {
+    height: 10px;
+    stroke: antiquewhite;
+    background-color: antiquewhite;
+    border: none;
+    width: 90vw;
 }
