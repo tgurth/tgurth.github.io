@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,700&display=swap');
+
+/* Global Things! */
 * {
     font-family: 'EB Garamond', serif;
 }
@@ -8,11 +10,17 @@ html {
 }
 body {
     background-color: white;
-
     color:rgb(224, 223, 223);
     width: 100%;
     margin: 0;
     overflow-x: hidden;
+}
+.code {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #f7f7f7;
+    padding: 0% 0.5%;
+    border-radius: 5px;
+    border: 1px solid #e4ece3;
 }
 a {
     color:rgb(47, 94, 57);
@@ -36,6 +44,8 @@ h2 {
     font-size: large;
     border: 1px solid;
     margin: 1%;
+    box-shadow: 5px 5px 0px black;
+    transition: box-shadow 0.5s ease-in-out;
 }
 .page-button:hover {
     border-radius: 0;
@@ -47,7 +57,8 @@ h2 {
     font-size: large;
     cursor: pointer;
     margin: 1%;
-
+    box-shadow: 6px 6px 0px black;
+    transition: box-shadow 0.5s ease-in-out;
 }
 .caption {
     text-align: center;
@@ -55,29 +66,10 @@ h2 {
     font-style: italic;
     font-size: medium;
 }
-
-.page-section {
-    margin-top: 3%;
-}
-.section-separator {
-    margin-top: 2%;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    color:rgb(165, 165, 165);
-}
 .line {
     width: 75vw;
 }
 
-.section-title {
-    font-size: 4em;
-    margin: 1.2%;
-    width: 65%;
-    font-weight: lighter;
-    padding: 0.5%;
-    color: black;
-}
 
 /* Nav Bar Stuff */
 #nav-bar {
@@ -95,49 +87,47 @@ h2 {
     width: 100vw;
     z-index: 5;
 }
-#img-in-nav-holder {
+#nav-title {
     width: 25vw;
     display: flex;
     font-size: 35px;
     align-items: center;
     padding: 1%;
 }
+#nav-title:hover {
+    color: rgb(62, 62, 62);
+}
 .nav-line {
     width: 7vw;
 }
-
 .nav-element {
     margin: 15px;
     cursor: pointer;
+    color: rgb(103, 103, 103);
+    text-decoration:none;
+    font-weight: 200;
+}
+.nav-element:hover {
+    margin: 15px;
+    cursor: pointer;
+    color: rgb(34, 34, 34);
+    transition: color 1s ease-in-out;
 }
 #fake-nav {
-    height: 9vh;
+    padding: 1.3%;
+    height: 4.3vh;
     width: 100vw;
 }
-
+.selected-nav {
+    color: rgb(62, 62, 62);
+}
 @media (max-width: 600px) {
     .nav-element {
         display: none;
     }
-    #fake-nav {
-        height: 8vh;
-        width: 100vw;
-    }
-    #img-in-nav-holder {
-        width: 50vw;
-        display: flex;
-        font-size: 35px;
-        align-items: center;
-        padding: 1%;
-    }
-    .nav-line {
-        width: 16vw;
-    }
-    
 }
 
-/* About Me Section */
-
+/* Default Page */
 #banner {
     height: 5em;
     overflow: hidden;
@@ -155,7 +145,6 @@ h2 {
     margin-bottom: 0.5%;
     font-size: 2vb;
 }
-
 #page-title {
     background-color: white;
     padding: 1%;
@@ -165,76 +154,13 @@ h2 {
     border: 1px solid black;
     letter-spacing: 15px;
     text-indent: 25px;
+    box-shadow: 5px 5px 0px black;
 }
-#home-body {
+#page-body {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1%;
-}
-#profile-pic {
-    width: 15em;
-    overflow: hidden;
-}
-
-
-#profile-container {
-    padding: 1%;
-    margin: 1%;
-    border: 1px solid black;
-    color: gray;
-    text-align: center;
-    box-shadow:12px 12px 3px 2px rgba(0, 0, 0, 0.2);
-    transform: rotate(3deg);
-}
-.code {
-    font-family:'Courier New', Courier, monospace;
-    background-color: #f7f7f7;
-    border-radius: 15%;
-    border: 1px solid #e4ece3;
-
-}
-
-#about-title {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-#about-me {
-    overflow: hidden;
-    background-image: url("Assets/Paintings/still_life_with_silver_cake_basket_2014.136.76.webp");
-    background-size: 90vw;
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    border: 3mm ridge rgb(209, 188, 94);   
-    outline: 0.4rem dashed rgb(199, 187, 78);
-    box-shadow: 0 0 0 0.3rem rgb(193, 173, 85);
-
-}
-
-
-#about-overlay {
-    width: 95vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1%;
-    margin: 1.2%;
-}
-
-#name-card {
-    text-align: center;
-    width: 22vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgb(103, 103, 103);
-    padding: 1.35%;
 }
 #page-content {
     display: flex;
@@ -249,52 +175,50 @@ h2 {
 .page-text {
     width: 60vw;
 }
-#socials {
-    display: flex;
-    justify-content: start;
-    gap: 5%;
-}
-#tyler {
-    width: 20vw;
-    margin: 2%;
-    aspect-ratio: 473 / 505;
-}
-
-@media (max-width: 1060px) {
-    #about-overlay {
-        flex-direction: column;
-        gap: 1vh;
-    }
-    #name-card {
-        flex-direction: row;
-        width: 70vw;
-        justify-content: center;
-        gap: 4%;
-    }
-    #about {
-        width: 70vw;
+@media (max-width: 570px) {
+    #page-title {
+        letter-spacing: 2px;
+        text-indent: 0px;
     }
 }
-@media (max-width: 650px) {
-    #name-card {
-        width: 80vw;
-        flex-direction: column;
-    }
-    #about {
-        width: 80vw;
-    }
-    #tyler {
-        width: 50vw;
-        margin: 2%;
-        aspect-ratio: 473 / 505;
-    }
+@media (max-width: 800px) {
     #socials {
+     flex-wrap: wrap;
+    }
+    .page-text {
+        width: 90vw;
+    }
+    #page-body {
         flex-direction: column;
-        justify-content: space-around;
+        gap: 10px;
+    }
+    #page-content {
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 }
 
+/* About Page */
+#profile-pic {
+    width: 15em;
+    overflow: hidden;
+}
+#profile-container {
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid black;
+    color: gray;
+    text-align: center;
+    box-shadow:12px 12px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: rotate(3deg);
+}
+#socials {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    flex-wrap: wrap;
+}
 
 /* Projects */
 #project-section {
