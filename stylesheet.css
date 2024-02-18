@@ -155,6 +155,14 @@ h2 {
     text-indent: 25px;
     box-shadow: 5px 5px 0px black;
 }
+.page-box {
+    background-color: white;
+    padding: 1%;
+    text-align: center;
+    width: fit-content;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px black;
+}
 #page-body {
     display: flex;
     justify-content: center;
@@ -291,6 +299,7 @@ h2 {
     margin: 1vh 1vw;
     padding: 3vh;
     font-size: medium;
+    text-align: left;
 }
 #projects {
     margin: 5vh 5vw 5vh 5vw;
