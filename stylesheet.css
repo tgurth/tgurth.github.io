@@ -26,6 +26,9 @@ a {
     color: rgb(47, 94, 57);
     font-weight: 700;
 }
+li {
+    margin: 1vh;
+}
 h1 {
     color: black;
     font-style: italic;
@@ -157,11 +160,12 @@ h2 {
 }
 .page-box {
     background-color: white;
-    padding: 1%;
+    padding: 2%;
     text-align: center;
-    width: fit-content;
+    width: 60vw;
     border: 1px solid black;
     box-shadow: 5px 5px 0px black;
+    margin: 2%;
 }
 #page-body {
     display: flex;
@@ -193,6 +197,9 @@ h2 {
         flex-wrap: wrap;
     }
     .page-text {
+        width: 90vw;
+    }
+    .page-box {
         width: 90vw;
     }
     #page-body {
@@ -284,35 +291,16 @@ h2 {
         font-size: medium;
     }
 }
-.project-pic {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: 25vw;
-    height: auto;
-}
 .project-title {
     font-size: 4vh;
 }
 .project-info {
     background-color: white;
-    margin: 1vh 1vw;
-    padding: 3vh;
     font-size: medium;
     text-align: left;
 }
-#projects {
-    margin: 5vh 5vw 5vh 5vw;
-    background-color: whitesmoke;
-}
 .project-info p {
     text-align: center;
-}
-.projectBox blockquote {
-    font-size: x-large;
-}
-li {
-    margin: 2vh;
 }
 .skills {
     display: flex;
@@ -323,7 +311,7 @@ li {
     color: black;
     margin: 1%;
     padding: 1.5%;
-    border-radius: 10px;
+    border: 1px solid black;
 }
 
 /* Experience Section */
