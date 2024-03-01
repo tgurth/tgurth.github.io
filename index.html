@@ -1,349 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./Assets/Favicon/apple-touch-icon.png"
+        />
+        <link rel="icon" href="./Assets/Favicon/favicon.ico" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./Assets/Favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./Assets/Favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./Assets/Favicon/site.webmanifest" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tyler Gurth</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./Assets/Favicon/apple-touch-icon.png">
-  <link rel="icon" href="./Assets/Favicon/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./Assets/Favicon/favicon-16x16.png">
-  <link rel="manifest" href="./Assets/Favicon/site.webmanifest">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tyler Gurth</title>
-</head>
-
-<body>
-  <div id="nav-bar-wrapper">
-    <div id="nav-bar">
-      <div id="about-anchor" class="nav-element">About</div>
-      <div id="project-anchor" class="nav-element">Projects</div>
-      <div id="img-in-nav-holder">
-        <hr class="nav-line" />
-        <p>TG</p>
-        <hr class="nav-line" />
-      </div>
-      <div id="experience-anchor" class="nav-element">Experience</div>
-      <div id="gallery-anchor" class="nav-element">Gallery</div>
-    </div>
-  </div>
-  <div id="fake-nav"></div>
-  <div id="about-title">
-    <div id="about-me">
-      <div id="about-overlay">
-        <div id="name-card">
-          <img src="./Assets/Headshot.png" id="tyler" alt="Headshot of Tyler in a library.">
-          <div>
-            <h1 id="name">Tyler Gurth</h1>
-            <p>Brown University, co 2025</p>
-            <p>
-              20 yrs old, he/him.
+    <body>
+        <div id="nav-bar-wrapper">
+            <div id="nav-bar">
+                <a
+                    id="about-anchor"
+                    class="nav-element selected-nav"
+                    href="index.html"
+                    >About</a
+                >
+                <a id="project-anchor" class="nav-element" href="projects.html"
+                    >Projects</a
+                >
+                <div id="nav-title">
+                    <hr class="nav-line" />
+                    <p>TG</p>
+                    <hr class="nav-line" />
+                </div>
+                <a
+                    id="experience-anchor"
+                    class="nav-element"
+                    href="experience.html"
+                    >Experience</a
+                >
+                <a id="gallery-anchor" class="nav-element" href="gallery.html"
+                    >Gallery</a
+                >
+            </div>
+        </div>
+        <div id="fake-nav"></div>
+        <div id="banner">
+            <p id="painting-caption">
+                <em>At the Races</em>, Edouard Manet c. 1875
             </p>
-          </div>
         </div>
-        <div id="about">
-          <h2>About Me</h2>
-          <blockquote>
-            Hi! My name is Tyler Gurth, and I am currently double majoring
-            in Computer Science and History of Art and Architecture at
-            Brown University. I also am a Head TA for introductory computer science classes here.
-          </blockquote>
-          <blockquote>
-            I am versed in <strong>Python, HTML, CSS, Java, JavaScript, C, C++,
-              and Typescript.</strong> At Brown, I'm in the software and design track.
-          </blockquote>
-          <blockquote>
-            My interests lie in game development, software engineering, and UI/UX.
-            My research interests lie in art through artificial intelligence, and
-            art identification through AI.
-          </blockquote>
-          <blockquote>
-            Feel free to reach out on any of my socials at any time, I am
-            always up to connect! <a href="mailto:tgurth21@gmail.com">Or, email me!</a>
-          </blockquote>
-          <blockquote>
-            Want more info? Check out my <a href="https://tylergurth.com/TylerGurthResume.pdf"
-              target="_blank">resume</a>.
-          </blockquote>
-          <blockquote>
-            Find me on my socials!
-
-          </blockquote>
-          <div id="socials">
-            <button class="page-button"
-              onclick="window.open('https://www.linkedin.com/in/tyler-gurth-87249b225/')">LINKEDIN</button>
-            <button class="page-button" onclick="window.open('https://github.com/tgurth')">GITHUB</button>
-            <button class="page-button"
-              onclick="window.open('https://www.instagram.com/tylergurth/')">INSTAGRAM</button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="caption">
-      <p>Still Life with Silver Cake Basket, 1866. John F Francis.</p>
-    </div>
-    <div class="section-separator" id="projects-title">
-      <hr class="line">
-    </div>
-  </div>
-
-  <div class="page-section">
-    <div id="project-section">
-      <h2 class="section-title">Projects</h2>
-      <div class="project-box">
-        <div class="project-info">
-          <h2 class="project-title">The Virtual Rosetta (Research)</h2>
-          <hr class="project-hr">
-          </hr>
-          <p>
-            The Virtual Rosetta was a project I worked on in the summer of 2022. It involved using scientific
-            Python libraries to create visualization methods of a corpus of 4000
-            woodblock prints from Vietnam. Read more about it here: <a
-              href="https://drive.google.com/file/d/1LMgf56KCXGp90ApKy1m1LnQyOwqtleDC/view?usp=sharing">Research
-              Poster</a>
-          </p>
-          <h3>Technical Details</h3>
-          <ul>
-            <li>Generated serialized matrices, minimum spanning trees, and force directed graphs using Python science
-              libraries like SciPy,
-              Sci-Kit Learn, and Pandas.</li>
-            <li>Researched effective methods for dimensional reduction data visualization such as T-SNE.</li>
-            <li>Programmed Python web scraping scripts with BeautifulSoup to convert the HTML corpus of data into PNG
-              types and compile datasets.</li>
-            <li>Visualized complex data in actionable graphs using PyPlot, revealing qualitative trends.</li>
-          </ul>
-          <div class="skills">
-            <div class="tech-skill" style="background-color: rgba(46, 255, 46, 0.351);">Python</div>
-            <div class="tech-skill" style="background-color: rgba(255, 245, 129, 0.351);">HTML</div>
-            <div class="tech-skill" style="background-color: rgba(255, 215, 129, 0.351);">Excel</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-box">
-
-        <div class="project-info">
-          <h2 class="project-title">Escape Room Web Panel</h2>
-
-          <hr class="project-hr">
-          </hr>
-          <p>
-            The Escape Garden State Web Panel was a project I made for my previous employer, an escape
-            room company in New Jersey. The site replaced an old, out-dated subscription site with a customized
-            web app that fit the needs of the company.
-          </p>
-          <h3>Technical Details</h3>
-          <ul>
-            <li>Utilized Google Firebase as storage, authentication, and database for the project.</li>
-            <li>Programmed custom tools for the app, including scripting time functions and game features with
-              Javascript.</li>
-            <li>Developed utils for statistic tracking, to be used for further adveritsiing and data analysis.</li>
-            <li>Designed, and created with original CSS, a GUI for employees to run the escape rooms.</li>
-          </ul>
-          <div class="skills">
-            <div class="tech-skill" style="background-color: rgba(139, 247, 255, 0.351);">Javascript</div>
-            <div class="tech-skill" style="background-color: rgba(255, 245, 129, 0.351);">HTML</div>
-            <div class="tech-skill" style="background-color: rgba(139, 255, 195, 0.351);">CSS</div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="project-box">
-
-        <div class="project-info">
-          <h2 class="project-title">Scrappy</h2>
-          <hr class="project-hr">
-          </hr>
-          <p>
-            Scrappy is a React social media web app I made with a team in my software engineering class at Brown. It
-            combines
-            the best aspects of photo sharing apps with social media, forming a sentimental and reflective view into a
-            user's life.
-          </p>
-          <h3>Technical Details</h3>
-          <ul>
-            <li>Used React TypeScript Framework to build out the components of the site, coupled with React Router to
-              create a navigable state system.</li>
-            <li>Connected with Google Authentication API to compose a login service and security.</li>
-            <li>Developed a MongoDB Java database, and uploaded photos to AWS as storage.</li>
-            <li>Personally programmed an NLP sorting algorithm using English feature vectors to sort posts based on
-              Hashtags.</li>
-          </ul>
-          <div class="skills">
-            <div class="tech-skill" style="background-color: rgba(139, 247, 255, 0.351);">Javascript</div>
-            <div class="tech-skill" style="background-color: rgba(195, 251, 255, 0.351);">Typescript</div>
-            <div class="tech-skill" style="background-color: rgba(255, 245, 129, 0.351);">HTML</div>
-            <div class="tech-skill" style="background-color: rgba(139, 255, 195, 0.351);">CSS</div>
-            <div class="tech-skill" style="background-color: rgba(220, 139, 255, 0.351);">Java</div>
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
-    <div class="caption">
-      <p>Peonies in a Vase, c. 1885. Charles Ethan Porter.</p>
-    </div>
-    <div class="section-separator" id="experience-title">
-      <hr class="line">
-    </div>
-  </div>
-
-
-  <div class="page-section">
-    <div id="experience-section">
-      <h2 class="section-title">Experience</h2>
-
-      <div id="experience-boxes">
-
-        <div class="experience-box">
-
-          <div class="experience-info">
-            <h3>Head Teaching Assistant, Brown University Computer Science</h3>
-            <blockquote>
-              I serve as a Head Teaching Assistant for Brown Computer Science's class on Discrete Structures and
-              Probability, as well as the department's class "The Digital World", an introduction to programming and
-              computer history.
-              Within the proof based class, I work on grading, communicating with students, and managing a staff of 35
-              TAs.
-              In the introductory programming class, I develop new assignments, hold office hours, and manage a staff of
-              15
-              TAs. In both classes, I focus on course logistics, serving over 330 students (Discrete Structures) and 220
-              (The
-              Digital World) students.
-            </blockquote>
-          </div>
-        </div>
-        <div class="experience-box">
-          <div class="experience-info">
-
-            <h3>Technical Director, Escape Garden State NJ</h3>
-            <blockquote>
-              I developed and designed a new escape room web app with Vite.js and Google Firebase database. I also
-              acted as a tech consultant for the staff, and made helpful util systems, like a javascript Discord bot,
-              and
-              math utils for calculating scores and times.
-            </blockquote>
-          </div>
-        </div>
-
-        <div class="experience-box">
-          <div class="experience-info">
-            <h3>Technical Skills</h3>
-            <div id="experience-skills">
-              <div class="tech-skill" style="background-color: rgba(139, 247, 255, 0.351); width: 80%;">Javascript</div>
-              <div class="tech-skill" style="background-color: rgba(195, 251, 255, 0.351); width: 70%;">Typescript</div>
-              <div class="tech-skill" style="background-color: rgba(255, 245, 129, 0.351); width: 95%;">HTML</div>
-              <div class="tech-skill" style="background-color: rgba(139, 255, 195, 0.351); width: 92%;">CSS</div>
-              <div class="tech-skill" style="background-color: rgba(220, 139, 255, 0.351); width: 95%;">Java</div>
-              <div class="tech-skill" style="background-color: rgba(255, 215, 129, 0.351); width: 65%;">Excel</div>
-              <div class="tech-skill" style="background-color: rgba(255, 186, 129, 0.351); width: 55%;">C / C++</div>
-              <div class="tech-skill" style="background-color: rgba(173, 129, 255, 0.351); width: 100%;">Python</div>
+        <div id="page-body">
+            <div id="page-content">
+                <h2 id="page-title">Tyler Gurth</h2>
+                <div class="page-text">
+                    <blockquote>
+                        Hi! My name is Tyler Gurth, and I am currently double
+                        majoring in Computer Science and History of Art and
+                        Architecture at
+                        <span style="color: #4e3629">Brown University</span>.
+                        I'm a
+                        <a
+                            href="https://cs.brown.edu/degrees/undergrad/jobs/meta-ta/"
+                            target="_blank"
+                            >Meta TA</a
+                        >
+                        in the CS department, so I'm often found making chaos in
+                        Google Calendar (<a
+                            href="https://blog.cs.brown.edu/2024/02/02/more-100-brown-cs-utas-start-semester-dodgeball-tournament/"
+                            target="_blank"
+                            >or playing dodgeball</a
+                        >). I also Head TA for introductory computer science
+                        classes here (ask me about
+                        <a href="https://cs22.io/" target="_blank">proofs</a> or
+                        all things
+                        <a
+                            href="https://cs.brown.edu/courses/cs002/"
+                            target="_blank"
+                            >digital</a
+                        >!).
+                    </blockquote>
+                    <blockquote>
+                        I am versed in <span class="code">Python</span>,
+                        <span class="code">HTML</span>,
+                        <span class="code">CSS</span>,
+                        <span class="code">Java</span>,
+                        <span class="code">SQL</span>,
+                        <span class="code">Javascript</span>,
+                        <span class="code">C</span>,
+                        <span class="code">C++</span>, and
+                        <span class="code">Typescript</span>. Some of my
+                        favorite libraries are <span class="code">NumPY</span>,
+                        <span class="code">Pandas</span>,
+                        <span class="code">JavaFX</span>,
+                        <span class="code">Pygame</span>, and
+                        <a href="https://www.bpl.org/" target="_blank"
+                            >The Boston Public</a
+                        >. I've also been known to dabble in
+                        <span class="code">React.js</span>,
+                        <span class="code">MongoDB</span>, and
+                        <span class="code">Flutter</span> for my larger app
+                        development. At Brown, I'm in the software and visual
+                        computing track (hopefully). This coming summer, I'll be
+                        working for
+                        <a href="https://www.duolingo.com" target="_blank"
+                            >Duolingo</a
+                        >
+                        doing software engineering.
+                    </blockquote>
+                    <blockquote>
+                        My engineering interests lie in game development,
+                        software engineering, and UI/UX. My research interests
+                        lie in combining computer vision with art history (well,
+                        whatever that means). My art interests lie in
+                        impressionism and early modern European art (like the
+                        <a
+                            href="https://www.nga.gov/collection/art-object-page.1180.html"
+                            target="_blank"
+                            >Manet piece</a
+                        >
+                        that is the above banner!).
+                    </blockquote>
+                    <blockquote>
+                        Feel free to reach out on any of my socials at any time,
+                        I am always up to connect!
+                        <a href="mailto:tgurth21@gmail.com">Or, email me!</a>
+                    </blockquote>
+                    <blockquote>
+                        Want more info? Check out my
+                        <a
+                            href="https://tylergurth.com/TylerGurthResume.pdf"
+                            target="_blank"
+                            >resume</a
+                        >.
+                    </blockquote>
+                    <div id="socials">
+                        <button
+                            class="page-button"
+                            onclick="window.open('https://www.linkedin.com/in/tyler-gurth-87249b225/')"
+                        >
+                            LINKEDIN
+                        </button>
+                        <button
+                            class="page-button"
+                            onclick="window.open('https://github.com/tgurth')"
+                        >
+                            GITHUB
+                        </button>
+                        <button
+                            class="page-button"
+                            onclick="window.open('https://www.instagram.com/tylergurth/')"
+                        >
+                            INSTAGRAM
+                        </button>
+                        <button
+                            class="page-button"
+                            onclick="window.open('photography.html')"
+                        >
+                            PHOTOGRAPHY
+                        </button>
+                    </div>
+                </div>
             </div>
-
-
-            <blockquote>
-              React, MongoDB, AWS, Node, GitHub, Git, Firebase, Jest, Figma, Blender, Photoshop, and Microsoft Office
-              Suite
-            </blockquote>
-          </div>
+            <div id="profile-container">
+                <img
+                    id="profile-pic"
+                    src="Assets/Photos/tyler_hanselgretal.JPG"
+                />
+                <p>Tyler in Amsterdam! Winter 2024.</p>
+            </div>
         </div>
-      </div>
-
-    </div>
-    <div class="caption">
-      <p>Flowers on a Window Ledge, c. 1861. John La Farge.</p>
-    </div>
-    <div class="section-separator" id="gallery-title">
-      <hr class="line">
-    </div>
-  </div>
-
-  <div class="page-section">
-    <h2 class="section-title" id="gall-title">Personal 3D Project Gallery</h2>
-    <div id="gallery">
-      <div class="gallery-year" id="2022">
-        <div class="year-content">
-          <div class="gallery-caption-pair">
-            <img src="Assets/Sayles.png" width="100%" class="gallery-pic" alt="3D Render of Sayles Hall.">
-            <div class="gallery-caption">
-              <p>Brown University Sayles Hall, 2022.</p>
-            </div>
-          </div>
-          <div class="gallery-caption-pair">
-            <img src="Assets/CinematicStill.png" width="100%" class="gallery-pic"
-              alt="3D Render of Brown Sciences Library.">
-            <div class="gallery-caption">
-              <p>Brown Sciences Library, 2022.</p>
-            </div>
-          </div>
-          <div class="gallery-caption-pair">
-            <img src="Assets/CompleteValley.png" width="100%" class="gallery-pic"
-              alt="3D Render of fantasy valley with Boat.">
-            <div class="gallery-caption">
-              <p>Valley with Boat, 2022</p>
-            </div>
-          </div>
-        </div>
-        <div class="year-timeline">
-          <div class="year-box">
-            <h3>2022</h3>
-          </div>
-          <div class="year-line">
-          </div>
-        </div>
-      </div>
-      <div class="gallery-year">
-        <div class="year-content">
-          <div class="gallery-caption-pair">
-            <img src="Assets/outhouse.png" width="100%" class="gallery-pic"
-              alt="3D Voxel Art of an old Outhouse and Chickens.">
-            <div class="gallery-caption">
-              <p>Outhouse, 2021.</p>
-            </div>
-          </div>
-          <div class="gallery-caption-pair">
-            <img src="Assets/oogway.png" width="100%" class="gallery-pic"
-              alt="3D Voxel Art of Master Oogway among trees.">
-            <div class="gallery-caption">
-              <p>Oogway, 2021.</p>
-            </div>
-          </div>
-          <div class="gallery-caption-pair">
-            <img src="Assets/deer.png" width="100%" class="gallery-pic"
-              alt="3D Voxel Art of a Deer standing on an island.">
-            <div class="gallery-caption">
-              <p>Deer on Isle, 2021.</p>
-            </div>
-          </div>
-        </div>
-        <div class="year-timeline">
-          <div class="year-box">
-            <h3>2021</h3>
-          </div>
-          <div class="year-line">
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <p style="text-align: center; color: black;">Looking for my photography? Check out my <a
-      href="photography.html">Photography
-      Website</a></p>
-
-
-
-  <footer>
-    <p>© 2023 Tyler Gurth. All rights reserved.
-      Javascript, HTML, and a dash of CSS.
-    </p>
-  </footer>
-  </div>
-  <script src="./main.js"></script>
-</body>
-
+        <footer>
+            <p>
+                © 2024 Tyler Gurth. All rights reserved. JS, HTML, and a dash of
+                CSS.
+            </p>
+        </footer>
+        <script src="./main.js"></script>
+    </body>
 </html>

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,600,700&display=swap');
+
+/* Global Things! */
 * {
     font-family: 'EB Garamond', serif;
 }
@@ -6,17 +8,35 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+hr {
+    color: rgb(90, 90, 90);
+    height: 2%;
+    width: 100%;
+}
 body {
-    background-color: #fffaf8;
-
-    color:rgb(224, 223, 223);
+    background-color: white;
+    color: rgb(90, 90, 90);
     width: 100%;
     margin: 0;
     overflow-x: hidden;
 }
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f7f7f7;
+    padding: 0% 0.5%;
+    border-radius: 5px;
+    border: 1px solid #e4ece3;
+}
 a {
-    color:rgb(0, 0, 0);
+    color: rgb(47, 94, 57);
     font-weight: 700;
+}
+a:hover {
+    color: rgb(60, 117, 72);
+    font-weight: 700;
+}
+li {
+    margin: 1vh;
 }
 h1 {
     color: black;
@@ -30,24 +50,27 @@ h2 {
 .page-button {
     border-radius: 0;
     background-color: rgb(255, 255, 255);
-    padding: 2% 5%;
+    padding: 1% 4%;
     border: none;
     color: rgb(0, 0, 0);
     font-size: large;
     border: 1px solid;
     margin: 1%;
+    box-shadow: 5px 5px 0px black;
+    transition: box-shadow 0.5s ease-in-out;
 }
 .page-button:hover {
     border-radius: 0;
     background-color: rgb(242, 242, 242);
-    padding: 2% 5%;
+    padding: 1% 4%;
     border: none;
     color: rgb(0, 0, 0);
     border: 1px solid;
     font-size: large;
     cursor: pointer;
     margin: 1%;
-
+    box-shadow: 6px 6px 0px black;
+    transition: box-shadow 0.5s ease-in-out;
 }
 .caption {
     text-align: center;
@@ -55,28 +78,8 @@ h2 {
     font-style: italic;
     font-size: medium;
 }
-
-.page-section {
-    margin-top: 3%;
-}
-.section-separator {
-    margin-top: 2%;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    color:rgb(165, 165, 165);
-}
 .line {
     width: 75vw;
-}
-
-.section-title {
-    font-size: 4em;
-    margin: 1.2%;
-    width: 65%;
-    font-weight: lighter;
-    padding: 0.5%;
-    color: black;
 }
 
 /* Nav Bar Stuff */
@@ -88,208 +91,168 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.3%;
-    height: 4.5vh;
+    padding: 1.3% 0;
+    height: 4.3vh;
     font-size: 25px;
-    box-shadow: 0px 5px 6px -5px rgb(213, 213, 213);
+    box-shadow: 0px 5px 6px -5px rgb(70, 70, 70);
     width: 100vw;
     z-index: 5;
 }
-#img-in-nav-holder {
+#nav-title {
     width: 25vw;
     display: flex;
     font-size: 35px;
     align-items: center;
     padding: 1%;
 }
+#nav-title:hover {
+    color: rgb(62, 62, 62);
+}
 .nav-line {
     width: 7vw;
 }
-
 .nav-element {
     margin: 15px;
     cursor: pointer;
+    color: rgb(103, 103, 103);
+    text-decoration: none;
+    font-weight: 200;
+}
+.nav-element:hover {
+    margin: 15px;
+    cursor: pointer;
+    font-weight: 200;
+    color: rgb(34, 34, 34);
+    transition: color 1s ease-in-out;
 }
 #fake-nav {
-    height: 10.5vh;
+    padding: 1.3%;
+    height: 4.3vh;
     width: 100vw;
 }
-
+.selected-nav {
+    color: rgb(62, 62, 62);
+}
 @media (max-width: 600px) {
     .nav-element {
-        display: none;
+        font-size: medium;
     }
-    #fake-nav {
-        height: 8vh;
-        width: 100vw;
-    }
-    #img-in-nav-holder {
-        width: 50vw;
-        display: flex;
-        font-size: 35px;
-        align-items: center;
-        padding: 1%;
-    }
-    .nav-line {
-        width: 16vw;
-    }
-    
 }
 
-/* About Me Section */
-#about-title {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-#about-me {
+/* Default Page */
+#banner {
+    height: 5em;
     overflow: hidden;
-    background-image: url("Assets/Paintings/still_life_with_silver_cake_basket_2014.136.76.webp");
-    background-size: 90vw;
-    width: 90vw;
+    width: 100vw;
+    background-image: url('Assets/Paintings/atraces.jpg');
+    background-size: 100vw;
+    color: whitesmoke;
     display: flex;
-    justify-content: center;
-    border: 3mm ridge rgb(209, 188, 94);   
-    outline: 0.4rem dashed rgb(199, 187, 78);
-    box-shadow: 0 0 0 0.3rem rgb(193, 173, 85);
-
+    justify-content: end;
+    align-items: end;
 }
-
-/* Overlay */
-@keyframes slowly-appear {
-    0% {
-      opacity: 50%;
-      transform: translateX(-100%);
-    }
-    80% {
-        transform: translateX(1.5%);
-      }
-    100% {
-        opacity: 100%;
-        transform: translateX(0);
-
-    }
+#painting-caption {
+    margin: 0;
+    margin-right: 1%;
+    margin-bottom: 0.5%;
+    font-size: 2vb;
 }
-#about-overlay {
-    width: 95vw;
+#page-title {
+    background-color: white;
+    padding: 1%;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    width: fit-content;
+    border: 1px solid black;
+    letter-spacing: 15px;
+    text-indent: 25px;
+    box-shadow: 5px 5px 0px black;
+}
+.page-box {
+    background-color: white;
+    padding: 2%;
+    text-align: center;
+    width: 60vw;
+    border: 1px solid black;
+    box-shadow: 5px 5px 0px black;
+    margin: 2%;
+}
+#page-body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1%;
-    margin: 1.2%;
-    animation: 4.5s ease-out 0s 1 slowly-appear;
+    padding: 1%;
 }
-#name-card {
-    text-align: center;
-    width: 22vw;
+#project-page-container {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(103, 103, 103);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgb(103, 103, 103);
-    padding: 1.35%;
+    width: 90vw;
 }
-#about {
-    text-align: c;
+#page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
     width: 60vw;
-    background-color: rgba(255, 255, 255, 1);
-    color: rgb(103, 103, 103);
-    padding: 1.5%;
     font-size: large;
+}
+.page-text {
+    width: 60vw;
+}
+@media (max-width: 570px) {
+    #page-title {
+        letter-spacing: 2px;
+        text-indent: 0px;
+    }
+}
+@media (max-width: 800px) {
+    #socials {
+        flex-wrap: wrap;
+    }
+    .page-text {
+        width: 90vw;
+    }
+    .page-box {
+        width: 90vw;
+    }
+    #page-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #page-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* About Page */
+#profile-pic {
+    width: 15em;
+    overflow: hidden;
+}
+#profile-container {
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid black;
+    color: gray;
+    text-align: center;
+    box-shadow: 12px 12px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: rotate(3deg);
 }
 #socials {
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 3%;
+    flex-wrap: wrap;
 }
-#tyler {
-    width: 20vw;
-    margin: 2%;
-    aspect-ratio: 473 / 505;
-}
-
-@media (max-width: 1060px) {
-    #about-overlay {
-        flex-direction: column;
-        gap: 1vh;
-    }
-    #name-card {
-        flex-direction: row;
-        width: 70vw;
-        justify-content: center;
-        gap: 4%;
-    }
-    #about {
-        width: 70vw;
-    }
-}
-@media (max-width: 650px) {
-    #name-card {
-        width: 80vw;
-        flex-direction: column;
-    }
-    #about {
-        width: 80vw;
-    }
-    #tyler {
-        width: 50vw;
-        margin: 2%;
-        aspect-ratio: 473 / 505;
-    }
-    #socials {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
-
 
 /* Projects */
-#project-section {
-    width: 98vw;
-    padding: 1%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(250, 250, 242);
-}
-.project-box {
-    background-image: url("Assets/Paintings/peonies_in_a_vase_2018.44.124.webp");
-    background-size: 100vw;
-    margin-top: 4%;
-    display: flex;
-    padding: 1.5%;
-    text-align: left;
-    overflow: hidden;
-    justify-content: space-around;
-    width: 75vw;
-    color:rgb(103, 103, 103);
-    border: 3mm ridge rgb(209, 188, 94);   
-    outline: 0.4rem dashed rgb(199, 187, 78);
-    box-shadow: 0 0 0 0.3rem rgb(193, 173, 85);    
-    display: flex;
-}
-.project-images {
-    
-    width: 20vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 1vh 1vw;
-    padding: 1vh;
-    background-color: whitesmoke;
-}
 
-@media (max-width: 1060px) {
-    .project-images {
-        display: none;
-    }
-}
 @media (max-width: 900px) {
     .project-box {
         width: 80vw;
@@ -305,35 +268,16 @@ h2 {
         font-size: medium;
     }
 }
-.project-pic {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: 25vw;
-    height: auto;
-}
 .project-title {
     font-size: 4vh;
 }
 .project-info {
     background-color: white;
-    margin: 1vh 1vw;
-    padding: 3vh;
     font-size: medium;
-}
-#projects {
-    margin: 5vh 5vw 5vh 5vw;
-    background-color: whitesmoke;
+    text-align: left;
 }
 .project-info p {
     text-align: center;
-}
-.projectBox blockquote {
-    font-size: x-large;
-
-}
-li {
-    margin: 2vh;
 }
 .skills {
     display: flex;
@@ -344,243 +288,87 @@ li {
     color: black;
     margin: 1%;
     padding: 1.5%;
-    border-radius: 10px;
+    border: 1px solid black;
 }
-
 
 /* Experience Section */
-#experience-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2%;
-    padding: 4%;
-    background-color: rgb(255, 246, 231);
-}
-#experience-boxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.experience-box {
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2.2%;
+#exp-container {
     text-align: left;
-    overflow: hidden;
-    color:rgb(103, 103, 103);
-    background-image: url(Assets/Paintings/flowers_on_a_window_ledge_2014.79.25.webp);
-    background-size: 100vw;    margin: 1%;
-    font-size: large;
-    border: 3mm ridge rgb(209, 188, 94);   
-    outline: 0.4rem dashed rgb(199, 187, 78);
-    box-shadow: 0 0 0 0.3rem rgb(193, 173, 85);    
-    display: flex;
+}
+.experience-title {
+    text-align: left;
+}
+.exp-box {
+    background-color: white;
+    padding: 1%;
+    text-align: left;
+    margin: 1%;
+    width: 100%;
+}
+.experience-info p {
+    text-align: left;
+}
+.experience-info a {
+    text-align: left;
 }
 .experience-info {
     background-color: white;
+    margin-left: 5%;
 }
-.experience-box h3 {
-    text-align: center;
+#duo {
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
-#experience-skills {
-    background-color: rgb(255, 255, 255);
-    padding: 2%;
-    width: 80%;
-}
-#experience-skills .tech-skill {
-    text-align: left;
-    width: 50%;
-    padding: 1%;
-    border-radius: 0px 10px 10px 0px;
-}
-@media (max-width: 1260px) {
-    #experience-boxes {
-        flex-direction: column;
-    }
-    .experience-box {
-        width: 75vw;
-        margin: 2%;
-    }
-}
-@media (max-width: 450px) {
-    .experience-box {
-        width: 85vw;
-        margin: 1%;
-
+@media (max-width: 800px) {
+    #exp-header {
+        text-align: center;
     }
 }
 
 /* Gallery */
-#gallery {
+
+#gallery-container {
     display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6vh;
-    width: 100vw;
-    background-color: #f6efed;
-}
-#gall-title {
-    width: 100%;
-    margin: 0px;
-    background-color: #f6efed;
-    color: black;
-}
-.gallery-year {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    width: 97vw;
-    padding: 1%;
-    margin: 1%;
-}
-.year-content {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     width: 100%;
-}
-.year-timeline {
-    display: flex;
-    flex-direction: column;
-    width: 10vw;
-    margin: 3%;
-    margin-top: 0;
-    margin-bottom: 0;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
-    padding: 1%;
-    padding-bottom: 0;
-    padding-top: 0;
 }
-.year-box {
-    padding: 1% 35%;
-    border: 1px solid;
-    display: flex;
-    margin: 2%;
-    justify-content: center;
-    align-items: center;
-    font-size: x-large;
-    color:rgba(0, 0, 0, 0.37);
-}
-.year-line {
-    width: 1%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.37);
-}
-
 .gallery-caption-pair {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 0;
-    width: 25vw;
-    height: 25vw;
-    overflow: hidden;
-    margin: 0.5%;
-    border: 1mm ridge rgb(209, 188, 94);   
-    outline: 0.2rem dashed rgb(199, 187, 78);
-    box-shadow: 0 0 0 0.1rem rgb(193, 173, 85);    
-}
-.gallery-caption-pair:hover {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 0;
-    width: 25vw;
-    height: 25vw;
-    overflow: hidden;
-    margin: 0.5%;
-    filter: brightness(1.1);
+    margin: 2%;
+    padding: 1%;
+    border: 1px solid black;
+    color: gray;
+    text-align: center;
+    box-shadow: 10px 10px 3px 2px rgba(0, 0, 0, 0.2);
 }
 .gallery-pic {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
     width: 25vw;
-    height: auto;
 }
-.gallery-caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 25vw;
-    height: 25vw;
-    background-image: linear-gradient( 180deg,  rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.253) 65%, rgb(0, 0, 0));
-    position: absolute;
-    z-index: 0;
-}
-
-@media (max-width: 960px) {
+@media (max-width: 800px) {
     .gallery-pic {
         width: 80vw;
-        height: auto;
-        margin: 5% 3% 1% 3%;
     }
     .gallery-caption-pair {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        gap: 0;
-        width: 80vw;
-        height: inherit;
-        overflow: hidden;
-        margin: 1%;
-    }
-    .gallery-caption-pair:hover {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        gap: 0;
-        width: 80vw;
-        height: inherit;
-        overflow: hidden;
-        filter: brightness(1.1);
-        margin: 1%;
-    }
-    .gallery-caption {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-        width: 80vw;
-        background-image: linear-gradient( 180deg,  rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.253) 65%, rgb(0, 0, 0));
-        position: absolute;
-        z-index: 0;
-    }
-    .year-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .year-timeline {
-        display: none;
+        padding: 3%;
     }
 }
 
 /* Footer  */
 footer {
-    text-align:  center;
+    text-align: center;
     color: black;
-    background-color: #f6efed;
+    background-color: whitesmoke;
     padding: 2px;
     width: 100vw;
     margin-top: 1%;
 }
-
 
 /* Photography Stuff */
 #photo-intro {
@@ -595,23 +383,21 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-image: url("Assets/Photos/SepiaTonedFrontenac.JPG");
-    background-size:cover;
+    background-image: url('Assets/Photos/SepiaTonedFrontenac.JPG');
+    background-size: cover;
     background-repeat: no-repeat;
     height: 40vh;
 }
-
 #photo-title {
     background-color: white;
     padding: 1%;
-    text-align: center;    
+    text-align: center;
     backdrop-filter: blur(20px);
     width: fit-content;
     border: 1px solid black;
     letter-spacing: 15px;
     text-indent: 25px;
 }
-
 #photo-about {
     background-color: rgb(205, 218, 222);
     display: flex;
@@ -619,7 +405,7 @@ footer {
     align-items: center;
     background-color: white;
     padding: 0.5%;
-    text-align: center;    
+    text-align: center;
     backdrop-filter: blur(20px);
     width: fit-content;
     border: 1px solid black;
@@ -642,7 +428,7 @@ footer {
         align-items: center;
         background-color: white;
         padding: 1%;
-        text-align: center;    
+        text-align: center;
         backdrop-filter: blur(20px);
         width: fit-content;
         border: 1px solid black;
@@ -655,7 +441,6 @@ footer {
     #photo-headshot {
         width: 40vw;
     }
-    
 }
 
 #photo-about-text {
@@ -666,7 +451,7 @@ footer {
     background-color: white;
     color: black;
     padding: 1%;
-    text-align: center;    
+    text-align: center;
     backdrop-filter: blur(20px);
     border: 1px solid black;
     font-size: 1.5rem;
@@ -677,7 +462,6 @@ footer {
 #portfolio-title p {
     text-align: center;
     text-indent: 25px;
-
 }
 
 #portfolio {
@@ -696,7 +480,7 @@ footer {
 #cards-title {
     background-color: white;
     padding: 1%;
-    text-align: center;    
+    text-align: center;
     backdrop-filter: blur(20px);
     width: fit-content;
     border: 1px solid black;
@@ -707,7 +491,7 @@ footer {
 .work-card {
     background-color: white;
     padding: 1%;
-    text-align: center;    
+    text-align: center;
     border: 1px solid black;
     margin: 1%;
     font-size: larger;
@@ -716,7 +500,7 @@ footer {
 .auth-card {
     background-color: white;
     padding: 1%;
-    text-align: center;    
+    text-align: center;
     border: 1px solid black;
     margin: 1%;
     font-size: larger;
@@ -748,7 +532,7 @@ footer {
     width: 70vw;
     background-color: white;
     padding: 1%;
-    text-align: center;    
+    text-align: center;
     border: 1px solid black;
     margin: 1%;
     overflow: scroll;
@@ -785,7 +569,7 @@ footer {
     width: 25vw;
     overflow: hidden;
     margin: 0.5%;
-    border: 1mm ridge rgb(209, 188, 94);   
+    border: 1mm ridge rgb(209, 188, 94);
     outline: 0.2rem dashed rgb(199, 187, 78);
     box-shadow: 0 0 0 0.1rem rgb(193, 173, 85);
 }
