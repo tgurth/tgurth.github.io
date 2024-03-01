@@ -8,9 +8,14 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+hr {
+    color: rgb(90, 90, 90);
+    height: 2%;
+    width: 100%;
+}
 body {
     background-color: white;
-    color: rgb(224, 223, 223);
+    color: rgb(90, 90, 90);
     width: 100%;
     margin: 0;
     overflow-x: hidden;
@@ -24,6 +29,10 @@ body {
 }
 a {
     color: rgb(47, 94, 57);
+    font-weight: 700;
+}
+a:hover {
+    color: rgb(60, 117, 72);
     font-weight: 700;
 }
 li {
@@ -112,6 +121,7 @@ h2 {
 .nav-element:hover {
     margin: 15px;
     cursor: pointer;
+    font-weight: 200;
     color: rgb(34, 34, 34);
     transition: color 1s ease-in-out;
 }
@@ -322,68 +332,39 @@ h2 {
 }
 
 /* Experience Section */
-#experience-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2%;
-    padding: 4%;
-    background-color: rgb(255, 246, 231);
-}
-#experience-boxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.experience-box {
-    width: 30vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2.2%;
+#exp-container {
     text-align: left;
-    overflow: hidden;
-    color: rgb(103, 103, 103);
-    background-image: url(Assets/Paintings/flowers_on_a_window_ledge_2014.79.25.webp);
-    background-size: 100vw;
+}
+.experience-title {
+    text-align: left;
+}
+.exp-box {
+    background-color: white;
+    padding: 1%;
+    text-align: left;
     margin: 1%;
-    font-size: large;
-    border: 3mm ridge rgb(209, 188, 94);
-    outline: 0.4rem dashed rgb(199, 187, 78);
-    box-shadow: 0 0 0 0.3rem rgb(193, 173, 85);
-    display: flex;
+    width: 100%;
+}
+.experience-info p {
+    text-align: left;
+}
+.experience-info a {
+    text-align: left;
 }
 .experience-info {
     background-color: white;
+    margin-left: 5%;
 }
-.experience-box h3 {
-    text-align: center;
+#duo {
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
-#experience-skills {
-    background-color: rgb(255, 255, 255);
-    padding: 2%;
-    width: 80%;
-}
-#experience-skills .tech-skill {
-    text-align: left;
-    width: 50%;
-    padding: 1%;
-    border-radius: 0px 10px 10px 0px;
-}
-@media (max-width: 1260px) {
-    #experience-boxes {
-        flex-direction: column;
-    }
-    .experience-box {
-        width: 75vw;
-        margin: 2%;
-    }
-}
-@media (max-width: 450px) {
-    .experience-box {
-        width: 85vw;
-        margin: 1%;
+@media (max-width: 800px) {
+    #exp-header {
+        text-align: center;
     }
 }
 
