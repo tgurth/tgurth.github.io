@@ -137,13 +137,58 @@ h2 {
     .nav-element {
         font-size: medium;
     }
+    #nav-title {
+        font-size: big;
+        text-align: center;
+        justify-content: center;
+    }
+    #nav-bar {
+        text-align: center;
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        color: rgb(103, 103, 103);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5% 0;
+        height: 6vh;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-element {
+        font-size: small;
+        width: 17vw;
+        margin: 0;
+    }
+    .nav-element:hover {
+        font-size: small;
+        width: 17vw;
+        margin: 0;
+        cursor: pointer;
+        font-weight: 200;
+        color: rgb(34, 34, 34);
+        transition: color 1s ease-in-out;
+    }
+    #nav-title {
+        font-size: medium;
+    }
+    .nav-line {
+        display: none;
+    }
+    .page-text {
+        width: 100vw;
+    }
 }
 
 /* Default Page */
 #banner {
-    height: 5em;
+    height: fit-content;
+    padding: 8% 0 0 0;
     overflow: hidden;
     width: 100vw;
+    background-repeat: no-repeat;
     background-image: url('Assets/Paintings/atraces.jpg');
     background-size: 100vw;
     color: whitesmoke;
@@ -227,6 +272,7 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-size: medium;
     }
 }
 
@@ -327,6 +373,20 @@ h2 {
         text-align: center;
     }
 }
+@media (max-width: 750px) {
+    .exp-box {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .exp-box {
+        width: 90vw;
+    }
+    .experience-title {
+        text-align: center;
+    }
+}
 
 /* Gallery */
 
@@ -360,13 +420,18 @@ h2 {
     }
 }
 
+@media (max-width: 400px) {
+    .page-text {
+        width: 100vw;
+    }
+}
+
 /* Footer  */
 footer {
     text-align: center;
     color: black;
     background-color: whitesmoke;
-    padding: 2px;
-    width: 100vw;
+    padding: 3px;
     margin-top: 1%;
 }
 
