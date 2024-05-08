@@ -142,6 +142,11 @@ h2 {
         text-align: center;
         justify-content: center;
     }
+    #fake-nav {
+        padding: 1.3%;
+        height: 6.3vh;
+        width: 100vw;
+    }
     #nav-bar {
         text-align: center;
         position: fixed;
@@ -150,21 +155,26 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1.5% 0;
+        padding: 2.5% 0;
         height: 6vh;
         z-index: 5;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .nav-element {
-        font-size: small;
-        width: 17vw;
+        font-size: medium;
+        width: fit-content;
         margin: 0;
     }
+    #nav-bar {
+        display: flex;
+        justify-content: center;
+        gap: 3%;
+    }
     .nav-element:hover {
-        font-size: small;
-        width: 17vw;
+        font-size: medium;
+        width: 15vw;
         margin: 0;
         cursor: pointer;
         font-weight: 200;
@@ -172,7 +182,8 @@ h2 {
         transition: color 1s ease-in-out;
     }
     #nav-title {
-        font-size: medium;
+        font-size: large;
+        width: 10vw;
     }
     .nav-line {
         display: none;
@@ -252,6 +263,10 @@ h2 {
     #page-title {
         letter-spacing: 2px;
         text-indent: 0px;
+        font-size: 2em;
+    }
+    #socials {
+        margin: 2%;
     }
 }
 @media (max-width: 800px) {
@@ -259,10 +274,10 @@ h2 {
         flex-wrap: wrap;
     }
     .page-text {
-        width: 90vw;
+        width: 95vw;
     }
     .page-box {
-        width: 90vw;
+        width: 95vw;
     }
     #page-body {
         flex-direction: column;
@@ -420,7 +435,7 @@ h2 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .page-text {
         width: 100vw;
     }
@@ -433,6 +448,13 @@ footer {
     background-color: whitesmoke;
     padding: 3px;
     margin-top: 1%;
+}
+@media (max-width: 400px) {
+    footer {
+        margin-top: 4%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }
 
 /* Photography Stuff */
