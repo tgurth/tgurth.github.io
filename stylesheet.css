@@ -85,7 +85,7 @@ h2 {
 
 /* Nav Bar Stuff */
 #nav-bar {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-image: url('Assets/apples.jpg');
     text-align: center;
     position: fixed;
