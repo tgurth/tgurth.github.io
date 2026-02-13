@@ -27,6 +27,15 @@
     </head>
 
     <body>
+        <div>
+            <input id="inputlist" list="items" placeholder="Type code..." />
+
+                <datalist id="items">
+                <option value="Cases">
+                <option value="Bottles">
+                <option value="">
+                </datalist>
+        </div>
         <div id="card-page-content">
             <div id="cards-title">
                 <h2>HIAA0063 Midterm Exam Review</h2>
@@ -1119,6 +1128,10 @@
                 dash of CSS.
             </p>
         </footer>
-        <script src="./flashcards.js"></script>
+        <script >
+            window.addEventListener("load", () => {
+                document.getElementById("inputlist").focus();
+            });
+        </script>
     </body>
 </html>
