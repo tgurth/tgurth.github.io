@@ -28,6 +28,7 @@
 
     <body>
         <div>
+            <input id="firstInput"/>
             <input id="inputlist" list="items" placeholder="Type code..." />
 
                 <datalist id="items">
@@ -1130,8 +1131,15 @@
         </footer>
         <script >
             window.addEventListener("load", () => {
-                document.getElementById("inputlist").focus();
+                document.getElementById("firstInput").focus();
             });
+
+             const input = document.getElementById("firstInput");
+            input.addEventListener("input", () => {
+                if (input.value === "15") {
+                 document.getElementById("inputlist").focus();
+                }
+});
         </script>
     </body>
 </html>
