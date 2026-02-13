@@ -37,6 +37,14 @@
                 <option value="">
                 </datalist>
         </div>
+        <div>
+            <input id="secondInput"/>
+            <select id="selectList">
+                <option value="Cases">Cases</option>
+                <option value="Bottles">Bottles</option>
+                <option value="">None</option>
+            </select>
+        </div>
         <div id="card-page-content">
             <div id="cards-title">
                 <h2>HIAA0063 Midterm Exam Review</h2>
@@ -1134,12 +1142,19 @@
                 document.getElementById("firstInput").focus();
             });
 
-             const input = document.getElementById("firstInput");
+            const input = document.getElementById("firstInput");
             input.addEventListener("input", () => {
                 if (input.value === "15") {
                  document.getElementById("inputlist").focus();
                 }
+            
 });
+const secondInput = document.getElementById("secondInput");
+            secondInput.addEventListener("input", () => {
+                if (secondInput.value === "15") {
+                 document.getElementById("selectList").focus();
+                }
+            });
         </script>
     </body>
 </html>
