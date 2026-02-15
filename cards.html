@@ -28,8 +28,9 @@
 
     <body>
         <div>
+            <input type="text" name="type1" id="type1" value="3" class="width6" list="typeOptions1" oninput="typeSet(event);" autocomplete="off"><datalist id="typeOptions1"><option value=""></option><option value="3">cases</option><option value="6">bottles</option></datalist>
             <input id="firstInput"/>
-            <input id="inputlist" list="items" placeholder="Type code..." />
+            <input id="inputlist" list="items" />
 
                 <datalist id="items">
                 <option value="Cases">
@@ -44,6 +45,15 @@
                 <option value="Bottles">Bottles</option>
                 <option value="">None</option>
             </select>
+        </div>
+         <div>
+            <input id="thirdInput"/>
+            <select id="selectList2">
+                <option value="Cases">Cases</option>
+                <option value="Bottles">Bottles</option>
+                <option value="">None</option>
+            </select>
+            <input id="hiddenInput" style="position: absolute; left: -9999px;"/>
         </div>
         <div id="card-page-content">
             <div id="cards-title">
@@ -1153,6 +1163,23 @@ const secondInput = document.getElementById("secondInput");
             secondInput.addEventListener("input", () => {
                 if (secondInput.value === "15") {
                  document.getElementById("selectList").focus();
+                }
+            });
+            const thirdInput = document.getElementById("thirdInput");
+            thirdInput.addEventListener("input", () => {
+                if (thirdInput.value === "15") {
+                    console.log("FOCUSING HIDDEN INPUT");
+                 document.getElementById("hiddenInput").focus();
+                }
+            });
+
+            const hiddenInput = document.getElementById("hiddenInput");
+            hiddenInput.addEventListener("input", () => {
+                if (hiddenInput.value === "3") {
+                 document.getElementById("selectList2").value = "Cases";
+                }
+                if (hiddenInput.value === "6") {
+                 document.getElementById("selectList2").value = "Bottles";
                 }
             });
         </script>
